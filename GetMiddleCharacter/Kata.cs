@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GetMiddleCharacter
 {
-    class Kata
+    public class Kata
     {
 
         public static string getMiddle(string s)

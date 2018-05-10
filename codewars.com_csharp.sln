@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetMiddleCharacter", "GetMiddleCharacter\GetMiddleCharacter.csproj", "{589D583A-6A36-4ACB-88AF-DAE0950B2819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetMiddleCharacterTests", "GetMiddleCharacterTests\GetMiddleCharacterTests.csproj", "{1A8B221B-8761-4581-84B8-14BE2D6B019B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{589D583A-6A36-4ACB-88AF-DAE0950B2819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{589D583A-6A36-4ACB-88AF-DAE0950B2819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{589D583A-6A36-4ACB-88AF-DAE0950B2819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8B221B-8761-4581-84B8-14BE2D6B019B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8B221B-8761-4581-84B8-14BE2D6B019B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8B221B-8761-4581-84B8-14BE2D6B019B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8B221B-8761-4581-84B8-14BE2D6B019B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
