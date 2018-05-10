@@ -11,6 +11,13 @@ namespace GetMiddleCharacter
 
         public static string getMiddle(string s)
         {
+            return string.IsNullOrEmpty(s)
+                        ? s
+                        : s.Substring((s.Length - 1) / 2, 2 - s.Length % 2);
+        }
+
+        public static string getMiddle2(string s)
+        {
             int length = s.Length;
 
             if (length == 1) return s;
