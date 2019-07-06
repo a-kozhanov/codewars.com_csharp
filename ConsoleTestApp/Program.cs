@@ -12,7 +12,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CamelCaseMethod.CamelCase(" camel case word"));
+            Console.WriteLine(string.Join(", ", ReverseListOrder.ReverseList(new List<int> { 1, 2, 3, 4 })));
         }
     }
 }
