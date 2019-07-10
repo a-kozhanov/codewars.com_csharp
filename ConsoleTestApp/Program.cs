@@ -12,7 +12,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(string.Join(", ", ReverseListOrder.ReverseList(new List<int> { 1, 2, 3, 4 })));
+            Console.WriteLine(ParseNiceIntFromChar.GetAge("3 years old"));
         }
     }
 }
