@@ -12,10 +12,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine(CountingChangeCombinations.CountCombinations(4, new[] { 1, 2 }));
-            Console.WriteLine(CountingChangeCombinations.CountCombinations(10, new[] { 5, 2, 3 }));
-
+            Console.WriteLine(SumMultiples.SumMul(2, 9));
         }
     }
 }
