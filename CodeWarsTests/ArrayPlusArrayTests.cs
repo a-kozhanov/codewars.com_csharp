@@ -6,6 +6,7 @@ using CodeWars;
 
 namespace CodeWarsTests
 {
+    [TestFixture]
     class ArrayPlusArrayTests
     {
         [Test]
