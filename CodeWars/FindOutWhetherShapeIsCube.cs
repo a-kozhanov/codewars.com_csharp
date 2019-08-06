@@ -19,10 +19,10 @@ namespace CodeWars
 {
     public class FindOutWhetherShapeIsCube
     {
-        //public bool IsCube(double volume, double side)
-        //{
-        //    return volume > 0 ? volume == Math.Pow(side, 3) : false;
-        //}
+        public bool IsCube(double volume, double side)
+        {
+            return volume > 0 ? volume == Math.Pow(side, 3) : false;
+        }
 
         //public bool IsCube(double volume, double side)
         //{
