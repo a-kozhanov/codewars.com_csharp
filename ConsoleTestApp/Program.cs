@@ -25,7 +25,9 @@ namespace ConsoleTestApp
 
             //Console.WriteLine(BreakCamelCase.breakCamelCase("c a m e l CamelCasing"));
             //Console.WriteLine(BreakCamelCase.breakCamelCase("camelCasingTest"));
-            Console.WriteLine(BreakCamelCase.breakCamelCase("...Sm Xjbjr Jiw Sijuop Q Xcwt Pcy Bwowulhs Feyz Bx L N Pqjsghc J"));
+            //Console.WriteLine(BreakCamelCase.breakCamelCase("...Sm Xjbjr Jiw Sijuop Q Xcwt Pcy Bwowulhs Feyz Bx L N Pqjsghc J"));
+
+            Console.WriteLine(Divisors.divisors(30));
 
         }
     }
