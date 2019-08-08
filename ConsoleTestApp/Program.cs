@@ -27,7 +27,15 @@ namespace ConsoleTestApp
             //Console.WriteLine(BreakCamelCase.breakCamelCase("camelCasingTest"));
             //Console.WriteLine(BreakCamelCase.breakCamelCase("...Sm Xjbjr Jiw Sijuop Q Xcwt Pcy Bwowulhs Feyz Bx L N Pqjsghc J"));
 
-            Console.WriteLine(Divisors.divisors(30));
+            //Console.WriteLine(Divisors.divisors(30));
+
+            MexicanWave mexicanWave = new MexicanWave();
+            //Console.WriteLine(mexicanWave.wave("hello"));
+            //Console.WriteLine(mexicanWave.wave("two words"));
+            foreach (var w in mexicanWave.wave("two words"))
+            {
+                Console.WriteLine(w);
+            }
 
         }
     }
