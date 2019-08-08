@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 //https://www.codewars.com/kata/mexican-wave/train/csharp
-//
+//https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/solutions/csharp
 
 //Task
 //In this simple Kata your task is to create a function that turns a string into a Mexican Wave.

@@ -29,13 +29,15 @@ namespace ConsoleTestApp
 
             //Console.WriteLine(Divisors.divisors(30));
 
-            MexicanWave mexicanWave = new MexicanWave();
+            //MexicanWave mexicanWave = new MexicanWave();
             //Console.WriteLine(mexicanWave.wave("hello"));
             //Console.WriteLine(mexicanWave.wave("two words"));
-            foreach (var w in mexicanWave.wave("two words"))
-            {
-                Console.WriteLine(w);
-            }
+            //foreach (var w in mexicanWave.wave("two words"))
+            //{
+            //    Console.WriteLine(w);
+            //}
+
+            Console.WriteLine(ShortestWord.FindShort("turns out random test cases are easier than writing out basic ones"));
 
         }
     }
