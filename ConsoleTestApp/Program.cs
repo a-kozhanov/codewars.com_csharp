@@ -40,17 +40,18 @@ namespace ConsoleTestApp
             //Console.WriteLine(ShortestWord.FindShort("turns out random test cases are easier than writing out basic ones"));
 
 
-            var fighters = new string[][]
-            {
-                new string[] { "Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega" },
-                new string[] { "Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison" },
-            };
+            //var fighters = new string[][]
+            //{
+            //    new string[] { "Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega" },
+            //    new string[] { "Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison" },
+            //};
 
-            var moves = new string[] { "up", "left", "right", "left", "left" };
+            //var moves = new string[] { "up", "left", "right", "left", "left" };
+            //StreetFighter2 sf = new StreetFighter2();
+            //Console.WriteLine(sf.StreetFighterSelection(fighters, new int[] { 0, 0 }, moves));
 
-            StreetFighter2 sf = new StreetFighter2();
 
-            Console.WriteLine(sf.StreetFighterSelection(fighters, new int[] { 0, 0 }, moves));
+            CountCharacters.Count("aba");
 
 
         }
