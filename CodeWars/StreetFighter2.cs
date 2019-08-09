@@ -80,90 +80,35 @@ namespace CodeWars
     {
         public string[] StreetFighterSelection(string[][] fighters, int[] position, string[] moves)
         {
-            //fighters = new string[][]
-            //{
-            //    new string[] { "Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega" },
-            //    new string[] { "Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison" },
-            //};
+            var selectedFighters = new List<string>();
+            var x = position[0];
+            var y = position[1];
 
-            //var moves = new string[] { "up", "left", "right", "left", "left" };
-            //var expected = new string[] { "Ryu", "Vega", "Ryu", "Vega", "Balrog" };
-
-            //"up", "left", "right", "left", "left"
-            //fighters, new int[] { 0, 0 }, moves
-            //2x6 grid
-            List<(int, int)> positionMove = new List<(int, int)>();
-
-            foreach (var m in moves)
+            foreach (var move in moves)
             {
-                switch (m)
+                switch (move)
                 {
                     case "up":
-                        {
-                            if (position[0] == 1) position[0] = 0;
-                            Console.WriteLine("up \t{0}:{1}", position[0], position[1]);
-                            break;
-                        }
+                        y = y == 1 ? y - 1 : y;
+                        break;
+
                     case "down":
-                        {
-                            if (position[0] == 0) position[0] = 1;
-                            Console.WriteLine("down \t{0}:{1}", position[0], position[1]);
-                            break;
-                        }
-                    //case "right":
+                        y = y == 0 ? y + 1 : y;
+                        break;
+
                     case "left":
-                        {
-                            if (position[1] >= 1 && position[1] <= 5) position[1]--;
-                            else if (position[1] == 0) position[1] = 5;
+                        x = x == 0 ? 5 : x - 1;
+                        break;
 
-                            Console.WriteLine("right \t{0}:{1}", position[0], position[1]);
-                            break;
-                        }
-                    //case "left":
                     case "right":
-                        {
-                            if (position[1] >= 0 && position[1] <= 4) position[1]++;
-                            else if (position[1] == 5) position[1] = 0;
-
-                            Console.WriteLine("left \t{0}:{1}", position[0], position[1]);
-                            break;
-                        }
+                        x = x == 5 ? 0 : x + 1;
+                        break;
 
                 }
-
-                //Console.WriteLine("Add positionMove \t{0}:{1}", position[0], position[1]);
-                positionMove.Add((position[0], position[1]));
+                selectedFighters.Add(fighters[y][x]);
             }
 
-            //Console.WriteLine();
-            var result = new string[moves.Length];
-
-            for (int i = 0; i < positionMove.Count; i++)
-            {
-                result[i] = fighters[positionMove[i].Item1][positionMove[i].Item2];
-                //Console.WriteLine("positionMove \t{0}:{1}", positionMove[i].Item1, positionMove[i].Item2);
-            }
-
-
-            //Console.WriteLine();
-            //foreach (var p in positionMove)
-            //{
-            //    Console.WriteLine("positionMove \t{0}:{1}", p.Item1, p.Item2);
-            //    //result.("88jkhk");
-            //}
-
-            //Console.WriteLine();
-            //foreach (var s in result)
-            //{
-            //    Console.WriteLine(s);
-            //}
-
-            //var moves = new string[] { "up", "left", "right", "left", "left" };
-            //var expected = new string[] { "Ryu", "Vega", "Ryu", "Vega", "Balrog" };
-            //| Ryu | E.Honda | Blanka | Guile | Balrog | Vega |
-            //| Ken | Chun Li | Zangief | Dhalsim | Sagat | M.Bison |
-
-            return result;
+            return selectedFighters.ToArray();
         }
 
         //Best Practices
