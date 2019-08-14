@@ -50,8 +50,11 @@ namespace ConsoleTestApp
             //StreetFighter2 sf = new StreetFighter2();
             //Console.WriteLine(sf.StreetFighterSelection(fighters, new int[] { 0, 0 }, moves));
 
+            //CountCharacters.Count("aba");
 
-            CountCharacters.Count("aba");
+            Console.WriteLine(MovesSquaredStrings.Oper(MovesSquaredStrings.VertMirror, "abcd\nefgh\nijkl\nmnop"));
+            Console.WriteLine();
+            //WriteLine(MovesSquaredStrings.Oper(MovesSquaredStrings.HorMirror, "abcd\nefgh\nijkl\nmnop"));
 
 
         }
