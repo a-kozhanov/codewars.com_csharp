@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using CodeWars;
@@ -70,9 +71,50 @@ namespace ConsoleTestApp
             //    //}
             //}
 
-            Console.WriteLine(SumTriangularNumbers.sumTriangularNumbers(6));
+            //Console.WriteLine(SumTriangularNumbers.sumTriangularNumbers(6));
+
+
+            //for (int i = 2; i <= 2; i += 2)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //return;
+
+            // IEnumerable<int> squares = Enumerable.Range(2, 2).Select(x => x + x);
+
+            // Console.WriteLine(string.Join(", ", squares));
+
+            //foreach (int num in squares)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+
+            //sequenceSum(2,6,2) === 12 // 2 + 4 + 6
+            //int start, int end, int step
+            //int start = 2;
+            //int stop = 6;
+            //int step = 2;
+            ////int x = start;
+
+            //var numbers = new List<int>();
+            //for (var i = start; i <= stop; i += step) numbers.Add(i);
+            //Console.WriteLine(numbers.Sum());
+
+            //Console.WriteLine(string.Join(", ", Enumerable.Range(start, ((stop - start) / step) + ((stop - start) % step == 0 ? 0 : 1))));
+
+            //Console.WriteLine(string.Join(", ", RangeIterator(start, stop, step)));
+            //Console.WriteLine(RangeIterator(start, stop, step).Sum());
+
+
+            Console.WriteLine(RemoveAnchorURL.RemoveUrlAnchor("www.codewars.com#about"));
+
 
         }
+
+
+
 
     }
 }
