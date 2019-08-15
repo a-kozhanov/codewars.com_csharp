@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using CodeWars;
 
 namespace ConsoleTestApp
@@ -52,11 +53,26 @@ namespace ConsoleTestApp
 
             //CountCharacters.Count("aba");
 
-            Console.WriteLine(MovesSquaredStrings.Oper(MovesSquaredStrings.VertMirror, "abcd\nefgh\nijkl\nmnop"));
-            Console.WriteLine();
+            //Console.WriteLine(MovesSquaredStrings.Oper(MovesSquaredStrings.VertMirror, "abcd\nefgh\nijkl\nmnop"));
+            //Console.WriteLine();
             //WriteLine(MovesSquaredStrings.Oper(MovesSquaredStrings.HorMirror, "abcd\nefgh\nijkl\nmnop"));
 
+            //Regex r = new Regex(@"^(\1.|^.)+$");
+            ////n(n+1)/2
+
+            //for (int n = 1; n <= 50; n++)
+            //{
+            //    Console.Write("{0} ", n * (n + 1) / 2);
+
+            //    //if (r.IsMatch("".PadLeft(n)))
+            //    //{
+            //    //    Console.Write("({0}) ", n);
+            //    //}
+            //}
+
+            Console.WriteLine(SumTriangularNumbers.sumTriangularNumbers(6));
 
         }
+
     }
 }
