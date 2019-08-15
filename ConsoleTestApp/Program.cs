@@ -108,8 +108,8 @@ namespace ConsoleTestApp
             //Console.WriteLine(RangeIterator(start, stop, step).Sum());
 
 
-            Console.WriteLine(RemoveAnchorURL.RemoveUrlAnchor("www.codewars.com#about"));
-
+            //Console.WriteLine(RemoveAnchorURL.RemoveUrlAnchor("www.codewars.com#about"));
+            Console.WriteLine(YourOrder.Order("is2 Thi1s T4est 3a"));
 
         }
 
