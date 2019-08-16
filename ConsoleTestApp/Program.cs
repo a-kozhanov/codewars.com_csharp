@@ -109,8 +109,10 @@ namespace ConsoleTestApp
 
 
             //Console.WriteLine(RemoveAnchorURL.RemoveUrlAnchor("www.codewars.com#about"));
-            Console.WriteLine(YourOrder.Order("is2 Thi1s T4est 3a"));
+            //Console.WriteLine(YourOrder.Order("is2 Thi1s T4est 3a"));
 
+
+            Console.WriteLine(IntegersRecreationOne.listSquared(1, 250));
         }
 
 
