@@ -117,8 +117,12 @@ namespace ConsoleTestApp
             //Console.WriteLine(DescendingOrder.descendingOrder(2110));
             //Console.WriteLine(DescendingOrder.descendingOrder(1201));
 
-            Console.WriteLine(RemoveFirstLastCharacter.Remove_char("qwerty"));
-
+            //Console.WriteLine(RemoveFirstLastCharacter.Remove_char("qwerty"));
+            //Console.WriteLine(CountDigit.NbDig(10, 1));
+            //Console.WriteLine(CountDigit.NbDig(10, 1));
+            //            Console.WriteLine(CountDigit.NbDig(25, 1));
+            Console.WriteLine(CountDigit.NbDig(25, 1));
+            //1, 4, 9, 10, 11, 12, 13, 14, 19, 21 в квадрате: 1, 16, 81, 100, 121, 144, 169, 196, 361, 441
         }
 
 
