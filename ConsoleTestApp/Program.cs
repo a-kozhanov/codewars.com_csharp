@@ -115,7 +115,9 @@ namespace ConsoleTestApp
             //Console.WriteLine(IntegersRecreationOne.listSquared(1, 250));
 
             //Console.WriteLine(DescendingOrder.descendingOrder(2110));
-            Console.WriteLine(DescendingOrder.descendingOrder(1201));
+            //Console.WriteLine(DescendingOrder.descendingOrder(1201));
+
+            Console.WriteLine(RemoveFirstLastCharacter.Remove_char("qwerty"));
 
         }
 
