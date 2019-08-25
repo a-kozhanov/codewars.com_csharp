@@ -125,8 +125,10 @@ namespace ConsoleTestApp
             //1, 4, 9, 10, 11, 12, 13, 14, 19, 21 в квадрате: 1, 16, 81, 100, 121, 144, 169, 196, 361, 441
 
             //Console.WriteLine(SquareEveryDigit.SquareDigits(9119)); //811181
+            //Console.WriteLine(RegexValidatePIN.ValidatePin("9¾9¾"));
 
-            Console.WriteLine(RegexValidatePIN.ValidatePin("9¾9¾"));
+            Console.WriteLine(CountingDuplicates.DuplicateCount("Indivisibility"));
+
         }
 
 

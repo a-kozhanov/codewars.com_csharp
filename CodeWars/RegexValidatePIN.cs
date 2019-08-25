@@ -1,6 +1,4 @@
-﻿
-
-//https://www.codewars.com/kata/regex-validate-pin-code/train/csharp
+﻿//https://www.codewars.com/kata/regex-validate-pin-code/train/csharp
 //https://www.codewars.com/kata/regex-validate-pin-code/solutions/csharp
 
 //Regex validate PIN code
