@@ -238,6 +238,9 @@ namespace ConsoleTestApp
             //Console.WriteLine(string.Join(",", IsThereVowel.IsVow(new object[] { 101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103 })));
             //Console.WriteLine((IsThereVowel.IsVow(new object[] { 101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103 })));
 
+            GetNthEvenNumber.NthEven(3);
+            GetNthEvenNumber.NthEven(100);
+            GetNthEvenNumber.NthEven(1298734);
 
         }
 
