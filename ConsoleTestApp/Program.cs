@@ -127,7 +127,10 @@ namespace ConsoleTestApp
             //Console.WriteLine(SquareEveryDigit.SquareDigits(9119)); //811181
             //Console.WriteLine(RegexValidatePIN.ValidatePin("9¾9¾"));
 
-            Console.WriteLine(CountingDuplicates.DuplicateCount("Indivisibility"));
+            //Console.WriteLine(CountingDuplicates.DuplicateCount("Indivisibility"));
+
+            Console.WriteLine(CreditCardMask.Maskify("4556364607935616"));
+
 
         }
 
