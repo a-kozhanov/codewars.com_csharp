@@ -129,8 +129,9 @@ namespace ConsoleTestApp
 
             //Console.WriteLine(CountingDuplicates.DuplicateCount("Indivisibility"));
 
-            Console.WriteLine(CreditCardMask.Maskify("4556364607935616"));
+            //Console.WriteLine(CreditCardMask.Maskify("4556364607935616"));
 
+            Console.WriteLine(SumAllMultiples.findSum(5));
 
         }
 
