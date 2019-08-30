@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text.RegularExpressions;
 using CodeWars;
@@ -131,11 +133,85 @@ namespace ConsoleTestApp
 
             //Console.WriteLine(CreditCardMask.Maskify("4556364607935616"));
 
-            Console.WriteLine(SumAllMultiples.findSum(5));
+            //Console.WriteLine(SumAllMultiples.findSum(5));
+
+            float input = 25;
+            //byte[] buffer = BitConverter.GetBytes(input);
+            //1, 1, 1, 1
+            byte[] buffer = new byte[] { 0, 0, 1, 0 };
+            Console.WriteLine(string.Concat(buffer));
+            var output = BitConverter.ToInt32(buffer, 0);
+            Console.WriteLine(output);
+
+            //Console.WriteLine(ToNumeral(new BitArray(new[] { 1, 1, 1, 1 })));
+            Console.WriteLine(BitArrayToU64(new BitArray(new[] { 1, 1, 1, 1, 1, 1, 1 })));
+
+
+
+            var bits1 = new BitVector32();
+            int bit1 = BitVector32.CreateMask();
+            int bit2 = BitVector32.CreateMask(bit1);
+            int bit3 = BitVector32.CreateMask(bit2);
+            int bit4 = BitVector32.CreateMask(bit3);
+            //int bit5 = BitVector32.CreateMask(bit4);
+            bits1[bit1] = true;
+            bits1[bit2] = true;
+            bits1[bit3] = false;
+            bits1[bit4] = false;
+            //bits1[bit5] = true;
+            Console.WriteLine(bits1);
+
+
+
+            int[] Test1 = new int[] { 0, 0, 1, 0 };
+            BitArray myBitArr = new BitArray(4);
+
+            myBitArr[0] = Convert.ToBoolean(Test1[3]);
+            myBitArr[1] = Convert.ToBoolean(Test1[2]);
+            myBitArr[2] = Convert.ToBoolean(Test1[1]);
+            myBitArr[3] = Convert.ToBoolean(Test1[0]);
+
+            //foreach (Object obj in myBitArr)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            var result = new int[1];
+            myBitArr.CopyTo(result, 0);
+
+            Console.WriteLine(result[0]);
+
 
         }
 
+        public static int ToNumeral(BitArray binary)
+        {
+            if (binary == null)
+                throw new ArgumentNullException("binary");
+            if (binary.Length > 32)
+                throw new ArgumentException("must be at most 32 bits long");
 
+            var result = new int[1];
+            binary.CopyTo(result, 0);
+            return result[0];
+        }
+
+        public static ulong BitArrayToU64(BitArray ba)
+        {
+            var len = Math.Min(64, ba.Count);
+            ulong n = 0;
+            for (int i = 0; i < len; i++)
+            {
+                if (ba.Get(i))
+                    n |= 1UL << i;
+            }
+            return n;
+        }
+
+        public static string ToBinary(int numeral)
+        {
+            return new BitArray(new[] { numeral }).ToString();
+        }
 
 
     }
