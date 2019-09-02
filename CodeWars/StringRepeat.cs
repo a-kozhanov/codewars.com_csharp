@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 //https://www.codewars.com/kata/string-repeat/train/csharp
-//
+//https://www.codewars.com/kata/string-repeat/solutions
 
 //String repeat
 
