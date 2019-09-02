@@ -24,5 +24,21 @@ namespace CodeWars
         }
         //Best Practices
 
+
+        //public static string NumberToString(int num)
+        //{
+        //    return $"{num}";
+        //}
+
+        //public static string NumberToString(int num)
+        //{
+        //    return Convert.ToString(num);
+        //}
+
+        //public static string NumberToString(int num)
+        //{
+        //    return num + "";
+        //}
+
     }
 }
