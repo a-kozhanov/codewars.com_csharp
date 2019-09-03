@@ -215,11 +215,13 @@ namespace ConsoleTestApp
             //RemovingElements.RemoveEveryOther(new object[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
             //Assert.AreEqual(new object[] { 1, 3, 5, 7, 9 }, RemovingElements.RemoveEveryOther(new object[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }));
 
-            RemovingElements.RemoveEveryOther(new object[] { "Hello", "Goodbye", "Hello Again" });
-            RemovingElements.RemoveEveryOther(new object[] { new object[] { 1, 2 } });
-            RemovingElements.RemoveEveryOther(new object[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
-            RemovingElements.RemoveEveryOther(new object[] { new object[] { "Goodbye" }, new Dictionary<string, string>() { { "Great", "Job" } } });
-            RemovingElements.RemoveEveryOther(new object[] { });
+            //RemovingElements.RemoveEveryOther(new object[] { "Hello", "Goodbye", "Hello Again" });
+            //RemovingElements.RemoveEveryOther(new object[] { new object[] { 1, 2 } });
+            //RemovingElements.RemoveEveryOther(new object[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+            //RemovingElements.RemoveEveryOther(new object[] { new object[] { "Goodbye" }, new Dictionary<string, string>() { { "Great", "Job" } } });
+            //RemovingElements.RemoveEveryOther(new object[] { });
+
+            GiveMeDiamond.print(5);
 
         }
 
