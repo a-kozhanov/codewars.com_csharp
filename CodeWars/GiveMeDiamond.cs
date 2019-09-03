@@ -69,6 +69,107 @@ namespace CodeWars
 
             return result.ToString();
         }
+
+
+        //Best Practices
+        //public static string print(int n)
+        //{
+        //    if (n % 2 == 0 || n < 0)
+        //    {
+        //        return null;
+        //    }
+
+        //    int middle = n / 2;
+        //    StringBuilder sb = new StringBuilder();
+        //    for (int index = 0; index < n; index++)
+        //    {
+        //        sb.Append(' ', Math.Abs(middle - index));
+        //        sb.Append('*', n - Math.Abs(middle - index) * 2);
+        //        sb.Append("\n");
+        //    }
+
+        //    return sb.ToString();
+        //}
+
+
+        //public static string print(int n)
+        //{
+        //    return n % 2 == 1
+        //      ? Enumerable.Range(0, n).
+        //          Select(q =>
+        //         q <= n / 2
+        //           ? new string(' ', (n / 2 - q)) + new String('*', q * 2 + 1)
+        //           : new string(' ', (q - n / 2)) + new String('*', 2 * (n - q) - 1)
+        //          ).Aggregate("", (c, i) => c + i + "\n")
+        //       : null;
+
+        //}
+
+
+        //public static string print(int n)
+        //{
+        //    if (n < 1 || n % 2 == 0) return null;
+        //    IEnumerable<String> top = Enumerable.Range(1, (int)Math.Floor(n / 2.0)).Select((_, i) => new String(' ', (n - 2 * i - 1) / 2) + new String('*', i * 2 + 1));
+        //    return String.Join("\n", top) + "\n" + new String('*', n) + "\n" + String.Join("\n", top.Reverse()) + "\n";
+        //}
+
+
+
+        //public class Diamond
+        //{
+        //    static string Aster(int times)
+        //    {
+        //        return new String('*', times);
+        //    }
+
+        //    static string Spacer(int times)
+        //    {
+        //        return new String(' ', times);
+        //    }
+        //    public static string print(int n)
+        //    {
+        //        if (n % 2 == 0 || n <= 0) return null;
+        //        StringBuilder shape = new StringBuilder();
+        //        for (int i = 1; i <= n; i += 2)
+        //        {
+        //            int count = (n - i) / 2;
+        //            shape.Append(Spacer(count) + Aster(i) + "\n");
+        //        }
+        //        for (int i = n - 2; i > 0; i -= 2)
+        //        {
+        //            int count = (n - i) / 2;
+        //            shape.Append(Spacer(count) + Aster(i) + "\n");
+        //        }
+        //        return shape.ToString();
+        //    }
+        //}
+
+
+        //public static string print(int n)
+        //{
+        //    if (n < 0 || n % 2 == 0)
+        //        return null;
+
+        //    var result = new StringBuilder();
+        //    result.Append(new String('*', n));
+        //    result.Append("\n");
+
+        //    int spaces = 1;
+        //    while (n > 1)
+        //    {
+        //        n -= 2;
+        //        string textToAdd = new String(' ', spaces++) + new String('*', n) + "\n";
+        //        result.Insert(0, textToAdd);
+        //        result.Append(textToAdd);
+        //    }
+        //    return result.ToString();
+        //}
+
+
+
+
+
+
     }
 
 }
