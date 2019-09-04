@@ -1,6 +1,6 @@
 ﻿using System;
 
-//
+//https://www.codewars.com/kata/bin-to-decimal/train/csharp
 //https://www.codewars.com/kata/57a5c31ce298a7e6b7000334/solutions/csharp
 
 //Bin to Decimal
