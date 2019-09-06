@@ -224,8 +224,12 @@ namespace ConsoleTestApp
             //GiveMeDiamond.print(5);
 
             //[TestCase(63, 7, true)]
-            Console.WriteLine(GrasshopperCheckForFactor.CheckForFactor(63, 7));
-
+            //Console.WriteLine(GrasshopperCheckForFactor.CheckForFactor(63, 7));
+            Console.WriteLine(GrasshopperGradeBook.GetGrade(95, 90, 93));
+            Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 70, 100));
+            Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 71, 72));
+            Console.WriteLine(GrasshopperGradeBook.GetGrade(65, 66, 60));
+            Console.WriteLine(GrasshopperGradeBook.GetGrade(32, 15, 21));
         }
 
 
