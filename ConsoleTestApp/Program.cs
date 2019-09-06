@@ -225,11 +225,20 @@ namespace ConsoleTestApp
 
             //[TestCase(63, 7, true)]
             //Console.WriteLine(GrasshopperCheckForFactor.CheckForFactor(63, 7));
-            Console.WriteLine(GrasshopperGradeBook.GetGrade(95, 90, 93));
-            Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 70, 100));
-            Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 71, 72));
-            Console.WriteLine(GrasshopperGradeBook.GetGrade(65, 66, 60));
-            Console.WriteLine(GrasshopperGradeBook.GetGrade(32, 15, 21));
+            //Console.WriteLine(GrasshopperGradeBook.GetGrade(95, 90, 93));
+            //Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 70, 100));
+            //Console.WriteLine(GrasshopperGradeBook.GetGrade(70, 71, 72));
+            //Console.WriteLine(GrasshopperGradeBook.GetGrade(65, 66, 60));
+            //Console.WriteLine(GrasshopperGradeBook.GetGrade(32, 15, 21));
+
+            //Console.WriteLine((char)101);
+
+            //Console.WriteLine(((int)'a').ToString(), ((int)'e').ToString(), ((int)'i').ToString(), ((int)'o').ToString(), ((int)'u').ToString());
+
+            //Console.WriteLine(string.Join(",", IsThereVowel.IsVow(new object[] { 101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103 })));
+            //Console.WriteLine((IsThereVowel.IsVow(new object[] { 101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103 })));
+
+
         }
 
 
