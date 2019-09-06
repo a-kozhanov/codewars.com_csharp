@@ -221,7 +221,10 @@ namespace ConsoleTestApp
             //RemovingElements.RemoveEveryOther(new object[] { new object[] { "Goodbye" }, new Dictionary<string, string>() { { "Great", "Job" } } });
             //RemovingElements.RemoveEveryOther(new object[] { });
 
-            GiveMeDiamond.print(5);
+            //GiveMeDiamond.print(5);
+
+            //[TestCase(63, 7, true)]
+            Console.WriteLine(GrasshopperCheckForFactor.CheckForFactor(63, 7));
 
         }
 
