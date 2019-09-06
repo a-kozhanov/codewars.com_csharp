@@ -1,4 +1,6 @@
-﻿using CodeWars;
+﻿using System;
+using System.Collections.Generic;
+using CodeWars;
 using NUnit.Framework;
 
 namespace CodeWarsTests
@@ -17,5 +19,31 @@ namespace CodeWarsTests
             Assert.AreEqual("found the needle at position 5", NeedleInHaystack.FindNeedle(haystack_2));
             Assert.AreEqual("found the needle at position 30", NeedleInHaystack.FindNeedle(haystack_3));
         }
+
+        [Test]
+        public static void zRandomTests()
+        {
+            Console.WriteLine("\n ********** 50 Random Tests **********");
+            Random rnd = new Random();
+            List<object> list = new List<object>();
+            for (int i = 0; i < 50; i++)
+            {
+                list.Clear();
+                int rando = rnd.Next(1, 100);
+                int randomIndex = rnd.Next(0, rando);
+                for (int j = 0; j < rando; j++)
+                {
+                    if (j == randomIndex)
+                    {
+                        list.Add("needle");
+                    }
+                    else
+                    {
+                        int n = rnd.Next(0, 500);
+                        list.Add(n);
+                    }
+                }
+                Assert.AreEqual("found the needle at position " + randomIndex, NeedleInHaystack.FindNeedle(list.ToArray()));
+            }
+        }
     }
-}
