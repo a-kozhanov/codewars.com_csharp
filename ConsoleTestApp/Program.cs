@@ -244,7 +244,9 @@ namespace ConsoleTestApp
 
             //1, 6, 1)
             //Console.WriteLine(ExpMatter.ExpressionsMatter(1, 6, 1));
-            Console.WriteLine(ExpMatter.ExpressionsMatter(1, 1, 1));
+            //Console.WriteLine(ExpMatter.ExpressionsMatter(1, 1, 1));
+
+            Console.WriteLine(NewCashierDoesNotKnow.GetOrder("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza"));
 
         }
 
