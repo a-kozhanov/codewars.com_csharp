@@ -246,8 +246,32 @@ namespace ConsoleTestApp
             //Console.WriteLine(ExpMatter.ExpressionsMatter(1, 6, 1));
             //Console.WriteLine(ExpMatter.ExpressionsMatter(1, 1, 1));
 
-            Console.WriteLine(NewCashierDoesNotKnow.GetOrder("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza"));
+            //Console.WriteLine(NewCashierDoesNotKnow.GetOrder("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza"));
 
+            //Console.WriteLine("apples, pears # and bananas\ngrapes\nbananas !apples");
+            //Console.WriteLine();
+            //Console.WriteLine(StripCommentsKata.StripComments("apples, pears # and bananas\ngrapes\nbananas !apples", new string[] { "#", "!" }));
+
+            //Console.WriteLine("a #b\nc\nd $e f g");
+            //Console.WriteLine();
+            //Console.WriteLine(StripCommentsKata.StripComments("a #b\nc\nd $e f g", new string[] { "#", "$" }));
+
+            //.WriteLine(StripCommentsKata.StripComments("a \n b \nc ", new string[] { "#", "$" }));
+
+
+            //Console.WriteLine();
+            //Console.WriteLine("a \n b \nc ");
+            //Console.WriteLine();
+
+            //a \n b \nc 
+
+            //tripCommentsKata.StripComments("a #b\nc\nd $e f g", new string[] { "#", "$" })
+
+            //Expected string length 5 but was 12.Strings differ at index 5.
+            //Expected: "a\nc\nd"
+            //But was:  "a\nc\nd $e f g"
+
+            Console.WriteLine(StripCommentsKata.StripComments("a", new string[] { "a" }));
         }
 
 
