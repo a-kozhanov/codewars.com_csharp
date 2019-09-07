@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 
-//
+//https://www.codewars.com/kata/new-cashier-does-not-know-about-space-or-shift/train/csharp
 //https://www.codewars.com/kata/5d23d89906f92a00267bb83d/solutions/csharp
 
 
