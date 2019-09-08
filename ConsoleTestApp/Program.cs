@@ -275,12 +275,14 @@ namespace ConsoleTestApp
 
             //private static String rgxStr = BinaryRegexp.MultipleOf7();
 
-            for (int i = 1; i < 100; i++)
-            {
-                System.Console.WriteLine("Testing for: " + i.ToString());
-                Console.WriteLine((Convert.ToString(i, 2)));
-                Console.WriteLine(i % 7 == 0);
-            }
+            //for (int i = 1; i < 100; i++)
+            //{
+            //    System.Console.WriteLine("Testing for: " + i.ToString());
+            //    Console.WriteLine((Convert.ToString(i, 2)));
+            //    Console.WriteLine(i % 7 == 0);
+            //}
+
+            Console.WriteLine(SumStringsNumbers.sumStrings("50095301248058391139327916261", "81055900096023504197206408605"));
 
         }
 
