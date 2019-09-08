@@ -271,7 +271,17 @@ namespace ConsoleTestApp
             //Expected: "a\nc\nd"
             //But was:  "a\nc\nd $e f g"
 
-            Console.WriteLine(StripCommentsKata.StripComments("a", new string[] { "a" }));
+            //Console.WriteLine(StripCommentsKata.StripComments("a", new string[] { "a" }));
+
+            //private static String rgxStr = BinaryRegexp.MultipleOf7();
+
+            for (int i = 1; i < 100; i++)
+            {
+                System.Console.WriteLine("Testing for: " + i.ToString());
+                Console.WriteLine((Convert.ToString(i, 2)));
+                Console.WriteLine(i % 7 == 0);
+            }
+
         }
 
 
