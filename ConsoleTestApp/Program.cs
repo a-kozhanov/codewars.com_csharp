@@ -282,8 +282,8 @@ namespace ConsoleTestApp
             //    Console.WriteLine(i % 7 == 0);
             //}
 
-            Console.WriteLine(SumStringsNumbers.sumStrings("50095301248058391139327916261", "81055900096023504197206408605"));
-
+            //Console.WriteLine(SumStringsNumbers.sumStrings("50095301248058391139327916261", "81055900096023504197206408605"));
+            Console.WriteLine(FilterOutGeese.GooseFilter(new string[] { "Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish" }));
         }
 
 
