@@ -12,7 +12,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-
+            DifferenceVolumesCuboids.FindDifference(new int[] { 2, 2, 3 }, new int[] { 5, 4, 1 });
         }
     }
 }
