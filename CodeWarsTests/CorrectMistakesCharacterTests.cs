@@ -65,4 +65,5 @@ namespace CodeWarsTests
             }
 
         }
+    }
 }
