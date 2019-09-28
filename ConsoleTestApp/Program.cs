@@ -12,7 +12,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            HighestScoringWord.High("take me to semynak");
+            Console.WriteLine(CamelCaseMethod.CamelCase(" camel case word"));
         }
     }
 }
