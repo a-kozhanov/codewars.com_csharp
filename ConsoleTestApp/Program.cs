@@ -12,7 +12,10 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(ParseNiceIntFromChar.GetAge("3 years old"));
+
+            Console.WriteLine(CountingChangeCombinations.CountCombinations(4, new[] { 1, 2 }));
+            Console.WriteLine(CountingChangeCombinations.CountCombinations(10, new[] { 5, 2, 3 }));
+
         }
     }
 }
