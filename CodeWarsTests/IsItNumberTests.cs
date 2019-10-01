@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using CodeWars;
+using NUnit.Framework;
 
-namespace CodeWars
+namespace CodeWarsTests
 {
     [TestFixture]
     public class IsItNumberTests
