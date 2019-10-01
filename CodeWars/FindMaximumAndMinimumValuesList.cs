@@ -18,6 +18,7 @@
 //#Notes
 //You may consider that there will not be any empty arrays/vectors.
 
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CodeWars
@@ -33,5 +34,15 @@ namespace CodeWars
         {
             return list.Max();
         }
+
+
+        //public int Min(int[] list) => list.Min();
+        //public int Max(int[] list) => list.Max();
+
+        //public int Min(IEnumerable<int> list) => list?.Min() ?? 0; 
+        //public int Max(IEnumerable<int> list) => list?.Max() ?? 0;
+
+
+
     }
 }
