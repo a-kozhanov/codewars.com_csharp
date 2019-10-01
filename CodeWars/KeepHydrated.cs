@@ -1,6 +1,6 @@
 ﻿
 //https://www.codewars.com/kata/keep-hydrated-1/train/csharp
-//
+//https://www.codewars.com/kata/582cb0224e56e068d800003c/solutions/csharp
 
 //Keep Hydrated!
 //8 kyu
@@ -25,5 +25,30 @@ namespace CodeWarsTests
         {
             return (int)time / 2;
         }
+
+
+        //public static int Litres(double time) => (int)(time*0.5);
+
+        //public static int Litres(double time)
+        //{
+        //    return Convert.ToInt32(Math.Floor(time * 0.5));
+        //}
+
+        //public static int Litres(double time)
+        //{
+        //    return (int) (time*0.5);
+        //}
+
+        //public static int Litres(double time)
+        //{
+        //    return (int)Math.Floor(time * 0.5); // Using cast and Math fucntions, wow.                    ILLUMINATI  R Z BEST
+        //}
+
+        //public static int Litres(double time)
+        //{
+        //    return (int)(time * .5);
+        //}
+
+
     }
 }
