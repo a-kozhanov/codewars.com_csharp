@@ -12,14 +12,11 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(SumMultiples.SumMul(2, 9));
-
-            Console.WriteLine(IsDivisibleByXAndY.isDivisible(8, 3, 4));
-            Console.WriteLine(IsDivisibleByXAndY.isDivisible(3, 3, 4));
-            Console.WriteLine(IsDivisibleByXAndY.isDivisible(8, 3, 4));
-
-
-
+            Console.WriteLine(HexToDecimal.HexToDec("1"));
+            Console.WriteLine(HexToDecimal.HexToDec("a"));
+            Console.WriteLine(HexToDecimal.HexToDec("10"));
+            Console.WriteLine(HexToDecimal.HexToDec("FF"));
+            Console.WriteLine(HexToDecimal.HexToDec("C"));
         }
     }
 }
