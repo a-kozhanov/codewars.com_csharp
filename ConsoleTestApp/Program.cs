@@ -13,6 +13,17 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
+            //Console.WriteLine(KataHowMuchILoveYou.HowMuchILoveYou(10));
+
+
+            for (int i = 1; i < 150; i++)
+            {
+                var r = (i) % 6;
+                //                var r = i > 6 ? (i) % 6 : i;
+                if (r == 1) Console.WriteLine();
+
+                Console.WriteLine(r);
+            }
 
         }
     }
