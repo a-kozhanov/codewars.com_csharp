@@ -13,7 +13,7 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine(ExclamationMarksSeries.Remove("Hi!!!", 1)); //Assert.AreEqual("Hi!!", ExclamationMarksSeries.Remove("Hi!!!", 1));
+
         }
     }
 }
