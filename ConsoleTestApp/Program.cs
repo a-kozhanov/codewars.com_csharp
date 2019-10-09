@@ -16,14 +16,7 @@ namespace ConsoleTestApp
             //Console.WriteLine(KataHowMuchILoveYou.HowMuchILoveYou(10));
 
 
-            for (int i = 1; i < 150; i++)
-            {
-                var r = (i) % 6;
-                //                var r = i > 6 ? (i) % 6 : i;
-                if (r == 1) Console.WriteLine();
-
-                Console.WriteLine(r);
-            }
+            HolidayVIIIDutyFree.DutyFree(12, 50, 1000);
 
         }
     }
