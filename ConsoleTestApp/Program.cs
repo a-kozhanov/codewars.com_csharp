@@ -13,10 +13,7 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-            //Console.WriteLine(KataHowMuchILoveYou.HowMuchILoveYou(10));
-
-
-            HolidayVIIIDutyFree.DutyFree(12, 50, 1000);
+            Console.WriteLine(SortAndStar.TwoSort(new[] { "turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones" }));
 
         }
     }
