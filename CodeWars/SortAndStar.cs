@@ -27,8 +27,6 @@ namespace CodeWars
         }
 
 
-
-
         //public static string TwoSort(string[] s)
         //{
         //    return string.Join("***", s.OrderBy(a => a, StringComparer.Ordinal).First().ToArray());
@@ -50,9 +48,9 @@ namespace CodeWars
         //public static string TwoSort(string[] s)
         //{
         //    return string.Join("***", s.OrderBy(x => x, StringComparer.Ordinal).First().ToArray());
+        //}
+
+
+
     }
-
-
-
-}
 }
