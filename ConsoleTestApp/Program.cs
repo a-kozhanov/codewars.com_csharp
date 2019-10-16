@@ -13,8 +13,7 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine(SortAndStar.TwoSort(new[] { "turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones" }));
-
+            Console.WriteLine(FindFirstNonConsecutiveNumber.FirstNonConsecutive(new int[] { 1, 2, 3, 4, 6, 7, 8 }));
         }
     }
 }
