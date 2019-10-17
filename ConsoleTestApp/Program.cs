@@ -13,7 +13,7 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine(FindFirstNonConsecutiveNumber.FirstNonConsecutive(new int[] { 1, 2, 3, 4, 6, 7, 8 }));
+
         }
     }
 }
