@@ -13,7 +13,7 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-
+            PowersOf2.PowersOfTwo(4);
         }
     }
 }
