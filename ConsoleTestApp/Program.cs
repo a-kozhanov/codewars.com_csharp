@@ -10,13 +10,10 @@ namespace ConsoleTestApp
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine(HexToDecimal.HexToDec("1"));
-            Console.WriteLine(HexToDecimal.HexToDec("a"));
-            Console.WriteLine(HexToDecimal.HexToDec("10"));
-            Console.WriteLine(HexToDecimal.HexToDec("FF"));
-            Console.WriteLine(HexToDecimal.HexToDec("C"));
+            PowersOf2.PowersOfTwo(4);
         }
     }
 }
