@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="6kyu\" />
-    <Folder Include="4kyu\" />
     <Folder Include="7kyu\" />
   </ItemGroup>
 
