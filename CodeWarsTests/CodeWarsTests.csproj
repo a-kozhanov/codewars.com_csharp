@@ -16,8 +16,4 @@
     <ProjectReference Include="..\CodeWars\CodeWars.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="7kyu\" />
-  </ItemGroup>
-
 </Project>
