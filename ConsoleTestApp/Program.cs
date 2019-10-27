@@ -13,7 +13,9 @@ namespace ConsoleTestApp
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine($"{Math.Sqrt(449426)}");
+            Console.WriteLine($"{Math.Sqrt(449426) * Math.Sqrt(449426)}");
+            Console.WriteLine($"{(double)Math.Sqrt(449426) * (double)Math.Sqrt(449426) == (double)449426}");
         }
     }
 }
