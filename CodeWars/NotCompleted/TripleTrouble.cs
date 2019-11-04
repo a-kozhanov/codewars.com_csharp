@@ -2,6 +2,9 @@
 //https://www.codewars.com/kata/triple-trouble-1/train/csharp
 //
 
+//6 kyu
+//Triple trouble
+
 //Write a function
 //TripleDouble(long num1, long num2)
 //which takes numbers num1 and num2 and returns 1 if there is a straight triple of a number at any place in num1 and also a straight double of the same number in num2.
