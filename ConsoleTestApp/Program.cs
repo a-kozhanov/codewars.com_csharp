@@ -26,7 +26,9 @@ namespace ConsoleTestApp
             //Console.WriteLine(amount.ToString("C2", new CultureInfo("en-US")));
             //Console.WriteLine(amount.ToString("C2", CultureInfo.CreateSpecificCulture("en-US")));
             //Console.WriteLine(string.Format(nfi, "{0:C}", amount));
-            Console.WriteLine(string.Format(new NumberFormatInfo { CurrencyGroupSeparator = "" }, "{0:C}", amount));
+            //Console.WriteLine(string.Format(new NumberFormatInfo { CurrencyGroupSeparator = "" }, "{0:C}", amount));
+
+            Console.WriteLine(amount.ToString("$0.00"));
 
         }
     }
