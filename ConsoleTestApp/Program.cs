@@ -14,6 +14,9 @@ namespace ConsoleTestApp
         static void Main(string[] args)
         {
 
+            var s = "this is number: 7";
+            Console.WriteLine(Convert.ToInt32(string.Concat(s.Where(x => char.IsDigit(x)))));
+
         }
     }
 }
