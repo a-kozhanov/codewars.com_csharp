@@ -14,8 +14,18 @@ namespace ConsoleTestApp
         static void Main(string[] args)
         {
 
-            var s = "this is number: 7";
-            Console.WriteLine(Convert.ToInt32(string.Concat(s.Where(x => char.IsDigit(x)))));
+            var ghost = new ColorGhost();
+            //ghost.color; //=> "white" or "yellow" or "purple" or "red"
+            Console.WriteLine(ghost.color);
+            Console.WriteLine(ghost.GetColor());
+
+            //var values = Enum.GetValues(typeof(ColorGhost.GhostColors));
+            //var random = new Random();
+            //var randomBar = (ColorGhost.GhostColors)values.GetValue(random.Next(values.Length));
+
+            //ColorGhost.
+
+            //Console.WriteLine(randomBar);
 
         }
     }
