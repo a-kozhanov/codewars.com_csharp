@@ -14,7 +14,6 @@ namespace ConsoleTestApp
         static void Main(string[] args)
         {
 
-            Console.WriteLine(string.Join(", ", FindMultiplesOfNumber.FindMultiples(5, 25)));
         }
     }
 }
