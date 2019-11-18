@@ -55,8 +55,5 @@ namespace CodeWars
 
 
         //public static bool Divide(int weight) => weight > 3 && weight % 2 == 0;
-
-
-
     }
 }
