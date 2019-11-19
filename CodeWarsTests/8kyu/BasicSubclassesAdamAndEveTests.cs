@@ -9,8 +9,8 @@ namespace CodeWarsTests
         [Test]
         public void SampleTest()
         {
-            BasicSubclassesAdamAndEve.Human[] humans = BasicSubclassesAdamAndEve.Create();
-            Assert.That(humans[0] is BasicSubclassesAdamAndEve.Man, "The first object in the array should be a Man");
+            Human[] humans = God.Create();
+            Assert.That(humans[0] is Man, "The first object in the array should be a Man");
         }
     }
 }
