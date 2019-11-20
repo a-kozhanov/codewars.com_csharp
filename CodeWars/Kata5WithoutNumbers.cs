@@ -16,7 +16,8 @@ namespace CodeWars
     {
         public static int UnusualFive()
         {
-            return "abcde".Length;
+            //return "abcde".Length;
+            return 'f' % 'a';
         }
     }
 }
