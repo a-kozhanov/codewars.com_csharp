@@ -22,6 +22,7 @@ Create a function named main that calls the functions in the proper order.
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CodeWars
 {
@@ -34,7 +35,8 @@ namespace CodeWars
 
         public static void PlayTurn()
         {
-            Log = new List<string> { "RollDice", "Move", "Combat", "GetCoins", "BuyHealth", "PrintStatus" };
+            //Log = new List<string> { "RollDice", "Move", "Combat", "GetCoins", "BuyHealth", "PrintStatus" };
+            Log = "RollDice Move Combat GetCoins BuyHealth PrintStatus".Split().ToList();
         }
     }
 }
