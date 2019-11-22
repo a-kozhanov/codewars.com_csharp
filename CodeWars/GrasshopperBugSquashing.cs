@@ -36,7 +36,8 @@ namespace CodeWars
         public static void PlayTurn()
         {
             //Log = new List<string> { "RollDice", "Move", "Combat", "GetCoins", "BuyHealth", "PrintStatus" };
-            Log = "RollDice Move Combat GetCoins BuyHealth PrintStatus".Split().ToList();
+            //Log = "RollDice Move Combat GetCoins BuyHealth PrintStatus".Split().ToList();
+            Log.AddRange(new[] { "RollDice", "Move", "Combat", "GetCoins", "BuyHealth", "PrintStatus" });
         }
     }
 }
