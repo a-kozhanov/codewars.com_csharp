@@ -1,6 +1,6 @@
 ﻿/*
 https://www.codewars.com/kata/training-js-number-7-if-dot-else-and-ternary-operator/train/csharp
-https://www.codewars.com/kata/57202aefe8d6c514300001fd/solutions/csharp/me/best_practice
+https://www.codewars.com/kata/training-js-number-7-if-dot-else-and-ternary-operator/solutions/csharp
 
 8 kyu
 Training JS #7: if..else and ternary operator
