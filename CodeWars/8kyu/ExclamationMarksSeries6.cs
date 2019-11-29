@@ -33,7 +33,7 @@ using System.Text.RegularExpressions;
 
 namespace CodeWars
 {
-    public class ExclamationMarksSeries
+    public class ExclamationMarksSeries6
     {
         public static string Remove(string s, int n)
         {
