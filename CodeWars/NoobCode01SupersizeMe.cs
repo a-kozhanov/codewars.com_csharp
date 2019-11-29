@@ -28,5 +28,16 @@ namespace CodeWars
         {
             return long.Parse(num.ToString().OrderByDescending(x => x).ToArray());
         }
+
+
+        //public static long SuperSize(long num)
+        //{
+        //    return Convert.ToInt64(new string(num.ToString().OrderByDescending(n => n).ToArray()));
+        //}
+
+        //public static long SuperSize(long num)
+        //{
+        //    return long.Parse(string.Concat(num.ToString().ToCharArray().OrderByDescending(c => c)));
+        //}
     }
 }
