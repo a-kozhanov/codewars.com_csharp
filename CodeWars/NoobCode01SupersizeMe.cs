@@ -1,6 +1,6 @@
 ﻿/*
 https://www.codewars.com/kata/noobcode-01-supersize-me-dot-dot-dot-or-rather-this-integer/train/csharp
-
+https://www.codewars.com/kata/noobcode-01-supersize-me-dot-dot-dot-or-rather-this-integer/solutions
 
 8 kyu
 noobCode 01: SUPERSIZE ME.... or rather, this integer!
