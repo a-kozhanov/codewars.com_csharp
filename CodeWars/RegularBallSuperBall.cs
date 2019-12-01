@@ -26,15 +26,36 @@ namespace CodeWars
         public RegularBallSuperBall(string ballType = "regular") => this.ballType = ballType;
     }
 
-    public class Ball
-    {
-        public string ballType { get; private set; }
+    //public class Ball
+    //{
+    //    public string ballType { get; private set; }
 
-        public Ball(string ballType = "regular")
-        {
-            this.ballType = ballType;
-        }
-    }
+    //    public Ball(string ballType = "regular")
+    //    {
+    //        this.ballType = ballType;
+    //    }
+    //}
+
+
+
+    //public class Ball {
+    //    public string ballType { get; set; }
+
+    //    public Ball(string ballType = "regular") {
+    //        this.ballType = ballType;
+    //    }
+    //}
+
+
+    //public class Ball {
+    //    public string ballType { get; set; }
+
+    //    public Ball(string ballType) {
+    //        this.ballType = ballType;
+    //    }
+
+    //    public Ball(): this("regular"){}
+    //}
 
 
 }
