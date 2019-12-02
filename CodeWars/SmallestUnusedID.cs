@@ -32,8 +32,7 @@ namespace CodeWars
             return 0;
         }
         //public static int NextId(int[] ids) => Enumerable.Range(0, ids.Length + 1).First(x => !ids.Contains(x));
-
-
+        //public static int NextId(int[] ids) => Enumerable.Range(0, ids.Max() + 2).Except(ids).Min();
 
         //public static int NextId(int[] ids)
         //{
