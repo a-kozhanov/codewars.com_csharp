@@ -13,10 +13,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            ObjectOrientedPiracy titanic = new ObjectOrientedPiracy(15, 10);
 
-            Console.WriteLine(titanic.Draft);
-            Console.WriteLine(titanic.Crew);
         }
     }
 }
