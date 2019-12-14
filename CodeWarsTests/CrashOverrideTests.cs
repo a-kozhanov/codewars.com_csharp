@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Globalization;
-using System.Linq;
-using System.Text.RegularExpressions;
+﻿using System.Collections.Generic;
 using CodeWars;
+using NUnit.Framework;
 
-namespace ConsoleTestApp
+namespace CodeWarsTests
 {
-    class Program
+    [TestFixture]
+    public class CrashOverrideTests
     {
-        static void Main(string[] args)
+        [Test]
+        public void BasicTest()
         {
             Dictionary<string[], string> bisics = new Dictionary<string[], string>()
             {
@@ -22,12 +19,10 @@ namespace ConsoleTestApp
                 {new []{"Hank", "Kutz"},"Half-life Killer"},
                 {new []{"123abc", "Pinkman"},"Your name must start with a letter from A - Z."}
             };
-
             foreach (KeyValuePair<string[], string> keyValuePair in bisics)
             {
-                Console.WriteLine(CrashOverride.AliasGen(keyValuePair.Key[0], keyValuePair.Key[1]));
+                StringAssert.AreEqualIgnoringCase(keyValuePair.Value, CrashOverride.AliasGen(keyValuePair.Key[0], keyValuePair.Key[1]));
             }
-
         }
     }
 }
