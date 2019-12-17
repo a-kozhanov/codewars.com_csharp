@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using CodeWars;
+using NUnit.Framework;
 
 namespace CodeWarsTests
 {
@@ -8,7 +9,7 @@ namespace CodeWarsTests
         [Test, Description("Hero should create a Hero")]
         public void InitTest()
         {
-            Hero myHero = new Hero();
+            GrasshopperTerminalGame1.Hero myHero = new GrasshopperTerminalGame1.Hero();
             Assert.AreEqual("Hero", myHero.Name);
         }
 
@@ -16,10 +17,9 @@ namespace CodeWarsTests
         [Test, Description("Hero should have appropriate types for its properties")]
         public void TypeTest()
         {
-            Hero myHero = new Hero();
+            GrasshopperTerminalGame1.Hero myHero = new GrasshopperTerminalGame1.Hero();
             Assert.That(myHero.Health is float);
         }
 #pragma warning restore CS0183
     }
-}
 }

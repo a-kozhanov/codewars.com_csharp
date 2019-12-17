@@ -13,7 +13,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine((10.67 - 9.45) / (1.83 - 1.52));
+
         }
     }
 }
