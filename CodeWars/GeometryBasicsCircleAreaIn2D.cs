@@ -92,3 +92,24 @@ namespace CodeWars
         }
     }
 }
+
+// public static double CircleArea(Circle circle)
+// {
+// return Math.PI * circle.Radius * circle.Radius;
+// }
+//
+//
+// public static double CircleArea(Circle circle)=>(circle.Radius*circle.Radius*3.14159265358979);
+//
+//
+// public static double CircleArea(Circle circle)
+// {
+// return Math.PI * Math.Pow(circle.Radius, 2);
+// }
+//
+//
+// public static double CircleArea(Circle circle)
+// {
+// return Math.Round((Math.PI * (double) Math.Pow(circle.Radius, 2)), 6);
+// }
+
