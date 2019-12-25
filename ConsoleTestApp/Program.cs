@@ -13,7 +13,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-
+            GrasshopperTerminalGameTurnFunction.DoTurn();
         }
     }
 }
