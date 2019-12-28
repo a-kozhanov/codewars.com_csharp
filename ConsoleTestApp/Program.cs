@@ -13,7 +13,8 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            MaximumMultiple.MaxMultiply(2, 7);
+            var kata = new SimpleFun37HouseNumbersSum();
+            Console.WriteLine(string.Join(",", kata.HouseNumbersSum(new int[] {4, 2, 0, 6, 0})));
         }
     }
 }
