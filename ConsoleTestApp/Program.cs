@@ -13,8 +13,22 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var kata = new SimpleFun37HouseNumbersSum();
-            Console.WriteLine(string.Join(",", kata.HouseNumbersSum(new int[] {4, 2, 0, 6, 0})));
+            var UpSpeed = 100;
+            var DownSpeed = 10;
+            var DesiredHeight = 910;
+
+            var height = 0;
+            var days = 0;
+
+            while (height < DesiredHeight)
+            {
+                days++;
+                height += UpSpeed;
+                if (height >= DesiredHeight) break;
+                height -= DownSpeed;
+            }
+
+            Console.WriteLine(days);
         }
     }
 }
