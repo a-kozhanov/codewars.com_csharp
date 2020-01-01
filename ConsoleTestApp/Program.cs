@@ -14,20 +14,20 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var s = "1234567898765";
+            int[] range = Enumerable.Range(1, 3).ToArray();
+            //Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, 1, -1));
+            // Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -1, -1));
+            // Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -5, -1));
+            //Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -3, -1));
 
-            // int seqLen = 5;
-            // var result = 0;
-            //
-            // for (var i = 0; i <= str.Length - seqLen; i++)
-            // {
-            //     var seq = int.Parse(str.Substring(i, 5));
-            //     if (result < seq) result = seq;
-            // }
 
-            //var result =  s.Select((x, i) => i).Select(i => i <= s.Length - 5 ? int.Parse(s.Substring(i, 5)) : 0).Max();
-            //var result = Enumerable.Range(0, s.Length - 4).Max(i => s.Substring(i, 5));
-            var result = int.Parse(Enumerable.Range(0, s.Length - 4).Max(i => s.Substring(i, 5)));
+            var i2 = ^1;
+            Console.WriteLine(range[i2]);
+
+            var index = -1;
+
+            //var result = range.Length - Math.Abs(index) + 1;
+            var result = range[range.Length - Math.Abs(index)];
 
             Console.WriteLine(result);
         }
