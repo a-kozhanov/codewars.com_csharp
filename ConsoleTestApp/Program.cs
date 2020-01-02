@@ -14,22 +14,12 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            int[] range = Enumerable.Range(1, 3).ToArray();
-            //Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, 1, -1));
-            // Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -1, -1));
-            // Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -5, -1));
-            //Console.WriteLine(RetrieveArrayValueByIndexWithDefault.Solution(range, -3, -1));
+            var arr = new int[] {6, 9, 3, 4, 3, 82, 11};
+            var target = 3;
 
+            var indexes = arr.Select((a,i)=>(a,i)).Where(x=>x.a == target).Select(x=>x.i).ToArray();
 
-            var i2 = ^1;
-            Console.WriteLine(range[i2]);
-
-            var index = -1;
-
-            //var result = range.Length - Math.Abs(index) + 1;
-            var result = range[range.Length - Math.Abs(index)];
-
-            Console.WriteLine(result);
+            foreach(var index in indexes) Console.WriteLine(index);
         }
     }
 }
