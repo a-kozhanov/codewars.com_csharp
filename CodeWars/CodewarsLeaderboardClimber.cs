@@ -1,6 +1,6 @@
 ﻿/*
 https://www.codewars.com/kata/codewars-leaderboard-climber/train/csharp
-
+https://www.codewars.com/kata/57d28215264276ea010002cf/solutions/csharp
 
 7 kyu
 Codewars Leaderboard Climber
