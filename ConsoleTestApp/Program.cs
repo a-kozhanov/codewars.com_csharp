@@ -15,6 +15,8 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
+            CompletePattern1 k = new CompletePattern1();
+            k.Pattern(5);
         }
     }
 }
