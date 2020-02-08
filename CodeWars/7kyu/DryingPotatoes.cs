@@ -34,9 +34,9 @@ namespace CodeWars
             //int t0 = 100 - p0;
             //int t1 = 100 - p1;
             return w0 * (100 - p0) / (100 - p1);
-            return (100 - p0) * w0 / (100 - p1);
+            //return (100 - p0) * w0 / (100 - p1);
             //return w0 * (100 - p0) / (100 - p1);
-            return (w0 * 100 - p0 * w0) / (100 - p1);
+            //return (w0 * 100 - p0 * w0) / (100 - p1);
         }
     }
 }
