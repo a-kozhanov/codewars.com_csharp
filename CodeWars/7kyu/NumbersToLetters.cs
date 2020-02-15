@@ -20,7 +20,7 @@ namespace CodeWars
     {
         public static string Switcher(string[] x)
         {
-            var letters = "zyxwvutsrqponmlkjihgfedcba!? ";
+            //var letters = "zyxwvutsrqponmlkjihgfedcba!? ";
             return string.Concat(x.Select(n => "zyxwvutsrqponmlkjihgfedcba!? "[int.Parse(n) - 1]));
         }
     }
