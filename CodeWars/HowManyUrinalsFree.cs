@@ -1,6 +1,6 @@
 ﻿/*
 https://www.codewars.com/kata/5e2733f0e7432a000fb5ecc4/train/csharp
-
+https://www.codewars.com/kata/5e2733f0e7432a000fb5ecc4/solutions/csharp
 
 7 kyu
 How many urinals are free?
@@ -37,6 +37,7 @@ Have fun and don't pee into the wrong urinal ;)
 
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace CodeWars
 {
@@ -44,26 +45,11 @@ namespace CodeWars
     {
         public static int GetFreeUrinals(string urinals)
         {
-            if (urinals.Contains("11"))
-            {
-                Console.WriteLine("-1");
-                return -1;
-            }
+            return urinals.Contains("11") ? -1 : Regex.Matches(urinals, @"(^|0)0(?!1)").Count;
 
-            urinals.Aggregate((x, y) => x != y ? '1' : '0');
-            urinals.Aggregate((x, y) => x != y ? 'a' : 'b');
-
-            Console.WriteLine();
-
-            for (var i = 0; i < urinals.Length; i++)
-            {
-                var d = Convert.ToString(i, 2);
-                var l = d.Length + 1;
-                Console.WriteLine($"{i} = \t{d} / {i % l}");
-            }
-
-
-            return 0;
+            // return urinals.Contains("11")
+            //     ? -1
+            //     : Regex.Replace(urinals, "010|10|01", "1").Replace("00", "0").Replace("1", "").Length;
         }
     }
 }
