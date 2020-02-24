@@ -23,5 +23,36 @@ namespace CodeWars
         {
             return numbers.OrderBy(x => x).Take(2).Sum();
         }
+
+        // public static int sumTwoSmallestNumbers(int[] numbers)
+        // {
+        //     Array.Sort(numbers);
+        //     var zalupa = numbers.Take(2).Sum();
+        //     return zalupa;
+        // }
+
+
+        // public static int sumTwoSmallestNumbers(int[] numbers)
+        // {
+        //     Array.Sort(numbers);
+        //
+        //     return (numbers[0] + numbers[1]);
+        // }
+
+        // public static int sumTwoSmallestNumbers(int[] numbers)
+        // {
+        //     var sorted = numbers.ToList();
+        //     sorted.Sort();
+        //     return (sorted[0] + sorted[1]);
+        // }
+
+        // public static int sumTwoSmallestNumbers(int[] numbers)
+        // {
+        //     //Code here...
+        //     int a = numbers.Min();
+        //     numbers = numbers.Except(new int[]{a}).ToArray();
+        //     int b = numbers.Min();
+        //     return a+b;
+        // }
     }
 }
