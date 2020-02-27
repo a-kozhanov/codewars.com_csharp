@@ -17,13 +17,31 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var s = "ZpglnRxqenU";
-            var r = string.Join("-", Enumerable.Range(0, s.Length).Select(x => string.Concat(Enumerable.Repeat(s.ToLower()[x], x + 1))));
+            Dictionary<string, string> dna1 = new Dictionary<string, string>();//{{'A': 'T'}, {'T': 'A'}, {'G': 'C'}, {'C': 'G'}};
+            dna1.Add("A", "T");
+            dna1.Add("T", "A");
+            dna1.Add("G", "C");
+            dna1.Add("C", "G");
 
-            Console.WriteLine(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(r));
+            //var dna = "TAACG";
+            var dna = "GTAT";
+            //"TAGC"["ATCG".IndexOf(c)];
 
-            //CultureInfo.CurrentCulture.TextInfo.ToTitleCase(s);
+            //var D = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
+            //var r = Regex.Replace(dna, ".", m => dna1.ContainsKey(m.Value) ? dna1[m.Value] : m.Value);
+            //var r = Regex.Replace(dna, ".", m => "TAGC"["ATCG".IndexOf(m.Value[0])]);
+
+            //var r1 = dna.Replace(dna, "TAGC"["ATCG".IndexOf()]);
+            //var r = Regex.Replace(dna, ".", m => $"{ "TAGC"["ATCG".IndexOf(m.Value[0])] }");
+            var r = Regex.Replace(dna, ".", m => $"{ "TAGC"["ATCG".IndexOf(m.Value[0])] }");
+
+            Console.WriteLine(r);
+
+            //Assert.AreEqual("TAACG", ComplementaryDNA.MakeComplement("ATTGC")); "TAGC"["ATCG".IndexOf(c)];
+            //Assert.AreEqual("CATA", ComplementaryDNA.MakeComplement("GTAT"));
 
         }
     }
 }
+
+
