@@ -17,31 +17,54 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> dna1 = new Dictionary<string, string>();//{{'A': 'T'}, {'T': 'A'}, {'G': 'C'}, {'C': 'G'}};
-            dna1.Add("A", "T");
-            dna1.Add("T", "A");
-            dna1.Add("G", "C");
-            dna1.Add("C", "G");
+            var numbers = new int[3, 5] {{1, 2, 3, 4, 5}, {5, 6, 7, 8, 9}, {20, 21, 34, 56, 100}};
 
-            //var dna = "TAACG";
-            var dna = "GTAT";
-            //"TAGC"["ATCG".IndexOf(c)];
+            int rows = numbers.GetUpperBound(0) + 1;
+            int columns = numbers.Length / rows;
 
-            //var D = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
-            //var r = Regex.Replace(dna, ".", m => dna1.ContainsKey(m.Value) ? dna1[m.Value] : m.Value);
-            //var r = Regex.Replace(dna, ".", m => "TAGC"["ATCG".IndexOf(m.Value[0])]);
+            Console.WriteLine(rows);
+            Console.WriteLine(columns);
 
-            //var r1 = dna.Replace(dna, "TAGC"["ATCG".IndexOf()]);
-            //var r = Regex.Replace(dna, ".", m => $"{ "TAGC"["ATCG".IndexOf(m.Value[0])] }");
-            var r = Regex.Replace(dna, ".", m => $"{ "TAGC"["ATCG".IndexOf(m.Value[0])] }");
+            //Console.WriteLine(numbers.GetValue(0, 1));
+            Console.WriteLine($"Rank: {numbers.Rank}");
+            Console.WriteLine($"Length: {numbers.Length}");
+            Console.WriteLine($"GetLength: {numbers.GetLength(0)}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
 
-            Console.WriteLine(r);
+            // for (var i = 0; i < numbers.Length + 1; i++)
+            // {
+            //     Console.WriteLine(i);
+            // }
 
-            //Assert.AreEqual("TAACG", ComplementaryDNA.MakeComplement("ATTGC")); "TAGC"["ATCG".IndexOf(c)];
-            //Assert.AreEqual("CATA", ComplementaryDNA.MakeComplement("GTAT"));
+            for (var i = 0; i < numbers.Rank; i++)
+            {
+                //Console.WriteLine(numbers.GetLength(i));
+                //Console.WriteLine(numbers.GetEnumerator()GetValue(1, 2));
+                //Console.WriteLine(numbers.(1,2));
+            }
 
+            // List<int> result = new List<int>();
+            //
+            // for (var i = 0; i < rows; i++)
+            // {
+            //     var arr = new List<int>();
+            //     for (var j = 0; j < columns; j++)
+            //     {
+            //         arr.Add(numbers[i, j]);
+            //     }
+            //
+            //     result.Add(arr.Min());
+            // }
+            //
+            // Console.WriteLine(result.Sum());
+            
+            Enumerable.Range(0, numbers.Rank + 1)
+                .Select(x => Enumerable.Range(0, numbers.GetLength(1)).Select(y => numbers[x, y]))
+                .Sum(x => x.Min());
         }
+
+        //Assert.AreEqual(26,SumOfMinimums.SumOfMinimums(new int[3, 5] {{1, 2, 3, 4, 5}, {5, 6, 7, 8, 9}, {20, 21, 34, 56, 100}}));
     }
 }
-
-
