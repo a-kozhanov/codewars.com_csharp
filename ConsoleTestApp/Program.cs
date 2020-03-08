@@ -17,54 +17,49 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var numbers = new int[3, 5] {{1, 2, 3, 4, 5}, {5, 6, 7, 8, 9}, {20, 21, 34, 56, 100}};
+            string expected =
+                "6|##### 5\n" +
+                "5|\n" +
+                "4|# 1\n" +
+                "3|########## 10\n" +
+                "2|### 3\n" +
+                "1|####### 7\n";
 
-            int rows = numbers.GetUpperBound(0) + 1;
-            int columns = numbers.Length / rows;
+            var results = new int[] {7, 3, 10, 1, 0, 5};
 
-            Console.WriteLine(rows);
-            Console.WriteLine(columns);
+            StringBuilder sb = new StringBuilder();
 
-            //Console.WriteLine(numbers.GetValue(0, 1));
-            Console.WriteLine($"Rank: {numbers.Rank}");
-            Console.WriteLine($"Length: {numbers.Length}");
-            Console.WriteLine($"GetLength: {numbers.GetLength(0)}");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-
-            // for (var i = 0; i < numbers.Length + 1; i++)
-            // {
-            //     Console.WriteLine(i);
-            // }
-
-            for (var i = 0; i < numbers.Rank; i++)
+            for (var i = results.Length - 1; i >= 0; i--)
             {
-                //Console.WriteLine(numbers.GetLength(i));
-                //Console.WriteLine(numbers.GetEnumerator()GetValue(1, 2));
-                //Console.WriteLine(numbers.(1,2));
+                //Console.WriteLine($"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}");
+                sb.Append($"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}\n");
             }
 
-            // List<int> result = new List<int>();
-            //
-            // for (var i = 0; i < rows; i++)
-            // {
-            //     var arr = new List<int>();
-            //     for (var j = 0; j < columns; j++)
-            //     {
-            //         arr.Add(numbers[i, j]);
-            //     }
-            //
-            //     result.Add(arr.Min());
-            // }
-            //
-            // Console.WriteLine(result.Sum());
-            
-            Enumerable.Range(0, numbers.Rank + 1)
-                .Select(x => Enumerable.Range(0, numbers.GetLength(1)).Select(y => numbers[x, y]))
-                .Sum(x => x.Min());
-        }
+            Console.WriteLine(sb.ToString());
+            Console.WriteLine();
 
-        //Assert.AreEqual(26,SumOfMinimums.SumOfMinimums(new int[3, 5] {{1, 2, 3, 4, 5}, {5, 6, 7, 8, 9}, {20, 21, 34, 56, 100}}));
+
+            var ss = Enumerable.Range(0, 6).Select((x, i) =>
+                $"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}").Reverse();
+
+            Console.WriteLine(string.Join("\n", ss));
+
+            // var s1 = Enumerable.Range(0, 6).Reverse().Select((x, i) =>
+            //     $"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}\n");
+
+            // StringBuilder sb = new StringBuilder();
+            //
+            // for (var i = results.Length - 1; i >= 0; i--)
+            // {
+            //     sb.Append($"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}\n");
+            // }
+
+            //return sb.ToString();
+
+            // var s2 = Enumerable.Range(0, 6).Select((x, i) =>
+            //     $"{i + 1}|{new string('#', results[i])}{(results[i] > 0 ? " " + results[i] : "")}").Reverse();
+
+            //return string.Join("\n", s2) + "\n";
+        }
     }
 }
