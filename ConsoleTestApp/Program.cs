@@ -18,15 +18,25 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var n = 7;
-            BigInteger sum = 1;
+            var n = 15;
 
-            for (var i = 1; i <= n; i++)
+            List<int> result = new List<int>();
+            //for (int i = 2; i <= Math.Sqrt(n); i++)
+            for (var i = 2; i <= Math.Sqrt(n); i++)
             {
-                sum = sum * (n + i) / i;
+                if (n % i == 0) Console.WriteLine(i);
+                if (n % i == 0)
+                {
+                    // result.Add(i);
+                    // result.Add(n / i);
+
+                    result.Add(i);
+                    if (i != n / i)
+                        result.Add(n / i);
+                }
             }
 
-            Console.WriteLine(sum);
+            result.ToArray();
         }
     }
 }
