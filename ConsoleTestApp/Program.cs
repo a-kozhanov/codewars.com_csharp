@@ -18,25 +18,16 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var n = 15;
+            var start = 1;
+            var end = 90;
+            var count = 0;
 
-            List<int> result = new List<int>();
-            //for (int i = 2; i <= Math.Sqrt(n); i++)
-            for (var i = 2; i <= Math.Sqrt(n); i++)
+            for (var i = start; i <= end; i++)
             {
-                if (n % i == 0) Console.WriteLine(i);
-                if (n % i == 0)
-                {
-                    // result.Add(i);
-                    // result.Add(n / i);
-
-                    result.Add(i);
-                    if (i != n / i)
-                        result.Add(n / i);
-                }
+                if (!i.ToString().Contains("5")) count++;
             }
 
-            result.ToArray();
+            Console.WriteLine(count);
         }
     }
 }
