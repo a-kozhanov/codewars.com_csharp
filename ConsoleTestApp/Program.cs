@@ -18,16 +18,12 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var start = 1;
-            var end = 90;
-            var count = 0;
+            var number = new int[] {8, 900, 500};
+            var n = number.Select((x, i) => new { Value = x, Index = i, len = x.ToString().Length });
 
-            for (var i = start; i <= end; i++)
-            {
-                if (!i.ToString().Contains("5")) count++;
-            }
+            var tt = n.Where(x => n.Max(m => m.len) == x.len).Select(x=>x.Value).First();
 
-            Console.WriteLine(count);
+            Console.WriteLine(tt);
         }
     }
 }
