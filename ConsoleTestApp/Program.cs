@@ -18,12 +18,17 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var number = new int[] {8, 900, 500};
-            var n = number.Select((x, i) => new { Value = x, Index = i, len = x.ToString().Length });
+            //Assert.AreEqual("Sabbatical! Boom!", OfficeVISabbatical.Sabb("Can I have a sabbatical?", 5, 5));
+            
+            string x = "Can I have a sabbatical?";
+            int val = 5;
+            int happ = 5;
 
-            var tt = n.Where(x => n.Max(m => m.len) == x.len).Select(x=>x.Value).First();
-
-            Console.WriteLine(tt);
+            var r = Regex.Matches(x, "(?i)[sabticl]").Count() + val + happ > 22
+                ? "Sabbatical! Boom!"
+                : "Back to your desk, boy.";
+            
+            Console.WriteLine(r);
         }
     }
 }
