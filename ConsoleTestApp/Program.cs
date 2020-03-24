@@ -18,17 +18,27 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            //Assert.AreEqual("Sabbatical! Boom!", OfficeVISabbatical.Sabb("Can I have a sabbatical?", 5, 5));
-            
-            string x = "Can I have a sabbatical?";
-            int val = 5;
-            int happ = 5;
+            double[][] arr = (new double[][]
+            {
+                new double[] {2, 3, 9, 10, 7},
+                new double[] {12, 6, 89, 45, 3},
+                new double[] {9, 12, 56, 10, 34},
+                new double[] {67, 23, 1, 88, 34}
+            });
 
-            var r = Regex.Matches(x, "(?i)[sabticl]").Count() + val + happ > 22
-                ? "Sabbatical! Boom!"
-                : "Back to your desk, boy.";
-            
-            Console.WriteLine(r);
+            Console.WriteLine(arr.Length);
+            Console.WriteLine(arr[0].Length);
+            Console.WriteLine(arr.GetLength(0));
+            Console.WriteLine(arr.Rank);
+            Console.WriteLine(arr.GetLowerBound(0));
+
+
+            Enumerable.Range(0, arr.First().Length).Select(i => Enumerable.Range(0, arr.Length).Select(j => arr[j][i]))
+                .ToArray().Select(a => a.Average());
+
+            //Enumerable.Range(0, arr.Length).Select(x => x);
+
+            //var r = arr[0].Zip(arr[1], (a, b) => new double[] {a, b}.Average());
         }
     }
 }
