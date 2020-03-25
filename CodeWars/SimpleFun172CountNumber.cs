@@ -1,6 +1,6 @@
 ﻿/*
 https://www.codewars.com/kata/58b635903e78b34958000056/train/csharp
-
+https://www.codewars.com/kata/58b635903e78b34958000056/solutions
 
 7 kyu
 Simple Fun #172: Count Number
