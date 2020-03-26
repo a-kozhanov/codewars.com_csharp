@@ -18,27 +18,26 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            double[][] arr = (new double[][]
+            var numbers = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            var from = 3;
+            var to = 10;
+            var result = 0;
+
+            //var hashSet = new HashSet<int>();
+            var set = new HashSet<int>();
+            for (var i = 0; i < numbers.Length; i++)
             {
-                new double[] {2, 3, 9, 10, 7},
-                new double[] {12, 6, 89, 45, 3},
-                new double[] {9, 12, 56, 10, 34},
-                new double[] {67, 23, 1, 88, 34}
-            });
+                for (var j = i + 1; j < numbers.Length; j++)
+                {
+                    var s = numbers[i] + numbers[j];
+                    if (s >= from && s < to) set.Add(s);
+                }
+            }
 
-            Console.WriteLine(arr.Length);
-            Console.WriteLine(arr[0].Length);
-            Console.WriteLine(arr.GetLength(0));
-            Console.WriteLine(arr.Rank);
-            Console.WriteLine(arr.GetLowerBound(0));
-
-
-            Enumerable.Range(0, arr.First().Length).Select(i => Enumerable.Range(0, arr.Length).Select(j => arr[j][i]))
-                .ToArray().Select(a => a.Average());
-
-            //Enumerable.Range(0, arr.Length).Select(x => x);
-
-            //var r = arr[0].Zip(arr[1], (a, b) => new double[] {a, b}.Average());
+            //Console.WriteLine();
+            //Console.WriteLine(String.Join(", ", set));
+            Console.WriteLine(set.Sum());
+            //Console.WriteLine(result);
         }
     }
 }
