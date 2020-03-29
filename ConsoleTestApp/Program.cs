@@ -18,6 +18,17 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
+            double[] inputArray = new double[] {2, 3, 1};
+            var r1 = Array.IndexOf(inputArray, inputArray.Min());
+            var r2 = Array.IndexOf(inputArray, r1);
+            var r3 = 3 - r2;
+
+            var enumerable = inputArray.Except(new[] {inputArray.Min(), inputArray.Max()});
+            //inputArray.OrderBy(x => x).GroupBy((x) => inputArray.Average()).Dump();
+            var elementAt = inputArray.OrderBy((x) => inputArray.Average());
+
+            Console.WriteLine(3 - Array.IndexOf(inputArray, inputArray.Max()) -
+                              Array.IndexOf(inputArray, inputArray.Min()));
         }
     }
 }
