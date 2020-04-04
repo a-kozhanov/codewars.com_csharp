@@ -1,5 +1,4 @@
-﻿
-//https://www.codewars.com/kata/sum-of-multiples/train/csharp
+﻿//https://www.codewars.com/kata/sum-of-multiples/train/csharp
 //https://www.codewars.com/kata/57241e0f440cd279b5000829/solutions/csharp
 
 //Sum of Multiples
@@ -27,11 +26,15 @@ namespace CodeWars
     {
         public static int SumMul(int n, int m)
         {
-            Console.WriteLine($"n:{n}, m:{m}");
-            if (n == 0 || n < m) throw new ArgumentException();
-            var sum = 0;
-            for (var i = n; i <= m; i += n) sum += i;
-            return sum;
+            return n < 1 || n >= m
+                ? throw new ArgumentException()
+                : Enumerable.Range(1, m).Where(x => x % n == 0).Sum();
+
+            // Console.WriteLine($"n:{n}, m:{m}");
+            // if (n == 0 || n < m) throw new ArgumentException();
+            // var sum = 0;
+            // for (var i = n; i <= m; i += n) sum += i;
+            // return sum;
         }
 
 
@@ -92,8 +95,5 @@ namespace CodeWars
 
         //    return Enumerable.Range(1, m).Where(e=>e%n==0).Sum();
         //}
-
-
-
     }
 }
