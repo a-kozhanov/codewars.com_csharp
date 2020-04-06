@@ -1,10 +1,9 @@
 # CodeWars Kata Solutions on C#
 
 
-[![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)](http://hits.dwyl.com/a-kozhanov/codewars_csharp)
-![](https://img.shields.io/github/languages/top/a-kozhanov/codewars_csharp?style=flat-square)
-![](https://img.shields.io/github/languages/code-size/a-kozhanov/codewars_csharp?style=flat-square)
-![](https://img.shields.io/github/last-commit/a-kozhanov/codewars_csharp?style=flat-square)
+![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)
+![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
+![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
 
 
 ## Overview
