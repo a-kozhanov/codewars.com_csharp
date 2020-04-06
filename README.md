@@ -1,13 +1,11 @@
 # CodeWars Kata Solutions on C#
 
-<div align="center">
 
-[![HitCount](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)](http://hits.dwyl.com/a-kozhanov/codewars_csharp)
-![GitHub top language](https://img.shields.io/github/languages/top/a-kozhanov/codewars_csharp?style=flat-square)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/a-kozhanov/codewars_csharp?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/a-kozhanov/codewars_csharp?style=flat-square)
+[![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)](http://hits.dwyl.com/a-kozhanov/codewars_csharp)
+![](https://img.shields.io/github/languages/top/a-kozhanov/codewars_csharp?style=flat-square)
+![](https://img.shields.io/github/languages/code-size/a-kozhanov/codewars_csharp?style=flat-square)
+![](https://img.shields.io/github/last-commit/a-kozhanov/codewars_csharp?style=flat-square)
 
-</div>
 
 ## Overview
 My completed [CodeWars][1] kata solutions on C# (C Sharp)
