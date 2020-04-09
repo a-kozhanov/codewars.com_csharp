@@ -21,7 +21,7 @@ namespace CodeWars
     {
         public static int WhoDominates(int[] array)
         {
-            var elem = Array.FindIndex(array, e => array.Count(x => x == e) > array.Length / 2);
+            return array.GroupBy(i => i).FirstOrDefault(g => g.Count() > array.Length / 2)?.Key ?? -1;
         }
 
 
