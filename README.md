@@ -17,7 +17,7 @@ Let's  see  Codewars's  defenition [from](https://github.com/Codewars/codewars.c
 Codewars is a community of developers, who are called Code Warriors (or just warriors), that train on improving their development skills. Think of it like a coding dojo - where developers train with each other and help each other get better through practice.
 
 ## Profile Badge
-![alt text](https://www.codewars.com/users/a.kozhanov/badges/large)
+[![](https://www.codewars.com/users/a.kozhanov/badges/large)](https://www.codewars.com/users/a.kozhanov)
 
 
 [1]: https://www.codewars.com/
