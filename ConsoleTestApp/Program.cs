@@ -18,6 +18,16 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
+            // var arr = new List<int> {1, -1, 2, -2, 3};
+            var arr = new List<int> {-3, 1, 2, 3, -1, -4, -2};
+
+            foreach (var arrayNumber in arr)
+            {
+                if (!arr.Contains(arrayNumber * (-1)))
+                {
+                    Console.WriteLine(arrayNumber);
+                }
+            }
         }
     }
 }
