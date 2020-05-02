@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 //https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/csharp
 //https://www.codewars.com/kata/57356c55867b9b7a60000bd7/solutions/csharp
 
 //Basic Mathematical Operations
+//8 kyu
 
 //Your task is to create a function that does four basic mathematical operations.
 //The function should take three arguments - operation(string/char), value1(number), value2(number).
@@ -24,19 +26,31 @@ namespace CodeWars
     {
         public static double basicOp(char operation, double value1, double value2)
         {
-            switch (operation)
-            {
-                case '+':
-                    return value1 + value2;
-                case '-':
-                    return value1 - value2;
-                case '*':
-                    return value1 * value2;
-                case '/':
-                    return value1 / value2;
-            }
-            return 0;
+            // switch (operation)
+            // {
+            //     case '+':
+            //         return value1 + value2;
+            //     case '-':
+            //         return value1 - value2;
+            //     case '*':
+            //         return value1 * value2;
+            //     case '/':
+            //         return value1 / value2;
+            // }
+            //
+            // return 0;
+
+            // return operation switch
+            // {
+            //     '+' => value1 + value2,
+            //     '-' => value1 - value2,
+            //     '*' => value1 * value2,
+            //     '/' => value1 / value2,
+            //     _ => throw new ArgumentException("Unknown operation", $"{operation}")
+            // };
+
+
+            return Convert.ToDouble(new DataTable().Compute($"{value1}{operation}{value2}", ""));
         }
     }
-
 }
