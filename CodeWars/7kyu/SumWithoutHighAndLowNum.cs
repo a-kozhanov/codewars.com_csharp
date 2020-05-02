@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 
 //https://www.codewars.com/kata/sum-without-highest-and-lowest-number/train/csharp
-//https://www.codewars.com/kata/576b93db1129fcf2200001e6/solutions/csharp
+
+// 8 kyu
+// Sum without highest and lowest number
 
 //Sum all the numbers of the array(in F# and Haskell you get a list) except the highest and the lowest element (the value, not the index!).
 //(The highest/lowest element is respectively only one element at each edge, even if there are more than one with the same value!)
@@ -30,10 +32,12 @@ namespace CodeWars
     {
         public static int Sum(int[] numbers)
         {
-            if (numbers != null && numbers.Length > 1)
-                return numbers.Sum() - numbers.Max() - numbers.Min();
+            return (numbers?.Length ?? 0) > 1 ? numbers.Sum() - numbers.Max() - numbers.Min() : 0;
 
-            return 0;
+            // if (numbers != null && numbers.Length > 1)
+            //     return numbers.Sum() - numbers.Max() - numbers.Min();
+            //
+            // return 0;
         }
 
         //Best Practices
@@ -43,6 +47,5 @@ namespace CodeWars
         //        ? 0
         //        : numbers.Sum() - numbers.Max() - numbers.Min();
         //}
-
     }
 }
