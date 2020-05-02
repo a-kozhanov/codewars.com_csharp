@@ -1,8 +1,8 @@
-﻿
-//https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/csharp
+﻿//https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/csharp
 //https://www.codewars.com/kata/576bb71bbbcf0951d5000044/solutions/csharp
 
 //Count of positives / sum of negatives
+// 8 kyu
 
 //Given an array of integers.
 //Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
@@ -19,8 +19,12 @@ namespace CodeWars
     {
         public static int[] CountPositivesSumNegatives(int[] input)
         {
-            if (input == null || input.Length == 0) return new int[] { };
-            return new[] { input.Count(x => x > 0), input.Where(i => i < 0).Sum() };
+            return input?.Length > 0
+                ? new[] {input.Count(i => i > 0), input.Where(i => i < 0).Sum()}
+                : new int[0];
+
+            // if (input == null || input.Length == 0) return new int[] { };
+            // return new[] { input.Count(x => x > 0), input.Where(i => i < 0).Sum() };
         }
 
         //public static int[] CountPositivesSumNegatives(int[] input)
