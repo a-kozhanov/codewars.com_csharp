@@ -15,7 +15,8 @@ namespace CodeWars
     {
         public static string Remove_char(string s)
         {
-            return s.Remove(s.Length - 1, 1).Remove(0, 1);
+            //return s.Remove(s.Length - 1, 1).Remove(0, 1);
+            return s[1..^1];
         }
 
         //Best Practices
@@ -23,6 +24,5 @@ namespace CodeWars
         //{
         //    return s.Substring(1, (s.Length - 2));
         //}
-
     }
 }
