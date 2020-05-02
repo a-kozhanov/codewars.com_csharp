@@ -19,12 +19,14 @@ namespace CodeWars
     {
         public static string FindNeedle(object[] haystack)
         {
-            for (int i = 0; i < haystack.Length; i++)
-            {
-                if (Convert.ToString(haystack[i]) == "needle") return $"found the needle at position {i}";
-            }
+            return $"found the needle at position {haystack.ToList().IndexOf("needle")}";
 
-            return "Not found the needle in haystack";
+            // for (int i = 0; i < haystack.Length; i++)
+            // {
+            //     if (Convert.ToString(haystack[i]) == "needle") return $"found the needle at position {i}";
+            // }
+            //
+            // return "Not found the needle in haystack";
         }
 
 
@@ -65,8 +67,5 @@ namespace CodeWars
         //{
         //    return string.Concat("found the needle at position ", Array.IndexOf(haystack, "needle"));
         //}
-
-
-
     }
 }
