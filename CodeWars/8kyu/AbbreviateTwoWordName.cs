@@ -19,7 +19,10 @@ namespace CodeWars
     {
         public static string AbbrevName(string name)
         {
-            return $"{name.Split()[0][0].ToString().ToUpper()}.{name.Split()[1][0].ToString().ToUpper()}";
+            //return $"{name.Split()[0][0].ToString().ToUpper()}.{name.Split()[1][0].ToString().ToUpper()}";
+            //return string.Join(".", name.Split().Select(x => char.ToUpper(x[0])));
+            //return string.Join(".", name.ToUpper().Split().Select(x => x[0]));
+            return $"{name[0]}.{name[name.IndexOf(' ') + 1]}".ToUpper();
         }
 
         //public static string AbbrevName(string name) => string.Join(".", name.Split(' ').Select(w => w[0])).ToUpper();
