@@ -1,8 +1,7 @@
-﻿
-//https://www.codewars.com/kata/invert-values/train/csharp
-//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/solutions/csharp
+﻿//https://www.codewars.com/kata/invert-values/train/csharp
 
-//Invert values
+// 8 kyu
+// Invert values
 
 //Given a set of numbers, return the additive inverse of each.Each positive becomes negatives, and the negatives become positives.
 //invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
@@ -18,7 +17,8 @@ namespace CodeWars
     {
         public static int[] InvertValues(int[] input)
         {
-            return input.Select(x => -x).ToArray();
+            return Array.ConvertAll(input, i => -i);
+            //return input.Select(x => -x).ToArray();
         }
     }
 }
