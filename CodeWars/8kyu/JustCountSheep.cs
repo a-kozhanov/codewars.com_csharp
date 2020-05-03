@@ -18,6 +18,11 @@ namespace CodeWars
     {
         public static string CountSheep(int n)
         {
+            
+            //return string.Join(" sheep...", Enumerable.Range(1, n)) + " sheep...";
+            return $"{string.Join(" sheep...", Enumerable.Range(1, n))} sheep...";
+            //string.Join(" sheep...", Enumerable.Range(1, n));
+            
             var sb = new StringBuilder();
             for (var i = 1; i <= n; i++) sb.Append($"{i} sheep...");
             return sb.ToString();
