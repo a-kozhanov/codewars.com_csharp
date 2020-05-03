@@ -1,8 +1,7 @@
-﻿
-//https://www.codewars.com/kata/reversed-sequence/train/csharp
-//https://www.codewars.com/kata/5a00e05cc374cb34d100000d/solutions/csharp
+﻿//https://www.codewars.com/kata/reversed-sequence/train/csharp
 
-//Reversed sequence
+// 8 kyu
+// Reversed sequence
 
 //Get the number n (n>0) to return the reversed sequence from n to 1.
 //Example : n=5 >> [5,4,3,2,1]
@@ -15,7 +14,8 @@ namespace CodeWars
     {
         public static int[] ReverseSeq(int n)
         {
-            return Enumerable.Range(1, n).Reverse().ToArray();
+            //return Enumerable.Range(1, n).Reverse().ToArray();
+            return new int[n].Select(_ => n--).ToArray();
         }
 
         //public static int[] ReverseSeq(int n)
@@ -41,8 +41,5 @@ namespace CodeWars
         //{
         //    return (from number in Enumerable.Range(1, n) select number).Reverse().ToArray();
         //}
-
-
-
     }
 }
