@@ -1,10 +1,7 @@
-﻿
-//https://www.codewars.com/kata/rock-paper-scissors/train/csharp
-//https://www.codewars.com/kata/5672a98bdbdd995fad00000f/solutions/csharp
+﻿//https://www.codewars.com/kata/rock-paper-scissors/train/csharp
 
 //Rock Paper Scissors!
 //8 kyu
-
 
 //Let's play! You have to return which player won! In case of a draw return Draw!.
 //Examples:
@@ -14,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace CodeWars
@@ -30,16 +28,18 @@ namespace CodeWars
     {
         public string Rps(string p1, string p2)
         {
-            if (p1 == "rock" && p2 == "scissors") return "Player 1 won!";
-            if (p1 == "scissors" && p2 == "paper") return "Player 1 won!";
-            if (p1 == "paper" && p2 == "rock") return "Player 1 won!";
+            return p1 == p2 ? "Draw!" : $"Player {(new[] {3, -1, -2}.Contains(p1[0] - p2[0]) ? '1' : '2')} won!";
 
-            if (p1 == "scissors" && p2 == "rock") return "Player 2 won!";
-            if (p1 == "paper" && p2 == "scissors") return "Player 2 won!";
-            if (p1 == "rock" && p2 == "paper") return "Player 2 won!";
-
-            if (p1 == p2) return "Draw!";
-            return "";
+            // if (p1 == "rock" && p2 == "scissors") return "Player 1 won!";
+            // if (p1 == "scissors" && p2 == "paper") return "Player 1 won!";
+            // if (p1 == "paper" && p2 == "rock") return "Player 1 won!";
+            //
+            // if (p1 == "scissors" && p2 == "rock") return "Player 2 won!";
+            // if (p1 == "paper" && p2 == "scissors") return "Player 2 won!";
+            // if (p1 == "rock" && p2 == "paper") return "Player 2 won!";
+            //
+            // if (p1 == p2) return "Draw!";
+            // return "";
         }
 
 
@@ -116,13 +116,11 @@ namespace CodeWars
         //}
 
 
-
         //public string Rps(string p1, string p2)
         //{
         //    return p1 == "scissors" && p2 == "paper" || p1 == "rock" && p2 == "scissors" || p1 == "paper" && p2 == "rock" ? "Player 1 won!" :
         //        p1 == p2 ? "Draw!" : "Player 2 won!";
         //}
-
 
 
         //public string Rps(string p1, string p2)
@@ -136,9 +134,5 @@ namespace CodeWars
         //private static readonly HashSet<string> map = new HashSet<string> {"scissorspaper","paperrock","rockscissors"};
 
         //public string Rps(string p1, string p2) => p1 == p2 ? "Draw!" : map.Contains(p1+p2) ? "Player 1 won!" : "Player 2 won!";
-
-
-
-
     }
 }
