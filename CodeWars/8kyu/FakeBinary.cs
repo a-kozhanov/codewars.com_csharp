@@ -1,5 +1,4 @@
-﻿
-//https://www.codewars.com/kata/fake-binary/train/csharp
+﻿//https://www.codewars.com/kata/fake-binary/train/csharp
 //https://www.codewars.com/kata/57eae65a4321032ce000002d/solutions/csharp
 
 //Fake Binary
@@ -17,12 +16,15 @@ namespace CodeWars
     {
         public static string FakeBin(string x)
         {
+            return string.Concat(x.Select(c => c / '5'));
+
             var sb = new StringBuilder();
             foreach (var n in x)
             {
                 if (int.Parse(n.ToString()) < 5) sb.Append(0);
                 if (int.Parse(n.ToString()) >= 5) sb.Append(1);
             }
+
             return sb.ToString();
         }
 
@@ -132,8 +134,5 @@ namespace CodeWars
         //{
         //    return string.Concat(x.Select(d => d / '5'));
         //}
-
-
-
     }
 }
