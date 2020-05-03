@@ -1,6 +1,4 @@
-﻿
-
-//https://www.codewars.com/kata/total-amount-of-points/train/csharp
+﻿//https://www.codewars.com/kata/total-amount-of-points/train/csharp
 //https://www.codewars.com/kata/5bb904724c47249b10000131/solutions/csharp
 
 //Total amount of points
@@ -25,6 +23,12 @@ namespace CodeWars
     {
         public static int TotalPoints(string[] games)
         {
+            //return games.Sum((x) => (x[0] < x[2]) ? 0 : (x[0] == x[2]) ? 1 : 3);
+            //return games.Sum(s => s[0] < s[2] ? 0 : s[0] == s[2] ? 1 : 3);
+            //return games.Select(x => x[0] == x[2] ? 1 : x[0] > x[2] ? 3 : 0).Sum();
+            //return games.Select(x => x[0] - x[2] == 0 ? 1 : x[0] - x[2] > 0 ? 3 : 0).Sum();
+            //return 3 * games.Count(i => i[0] > i[2]) + games.Count(i => i[0] == i[2]);
+
             var result = 0;
             foreach (var game in games)
             {
@@ -97,11 +101,5 @@ namespace CodeWars
         //    => games
         //        .Select(g => new { x = g[0], y = g[2] })
         //        .Aggregate(0, (c, n) => c + (n.x > n.y ? 3 : (n.x < n.y ? 0 : 1)));
-
-
-
-
-
-
     }
 }
