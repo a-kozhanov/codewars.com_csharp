@@ -28,7 +28,7 @@ namespace CodeWars
     {
         public string Rps(string p1, string p2)
         {
-            return p1 == p2 ? "Draw!" : $"Player {(new[] {3, -1, -2}.Contains(p1[0] - p2[0]) ? '1' : '2')} won!";
+            return p1 == p2 ? "Draw!" : $"Player {(new[] {3, -1, -2}.Contains(p1[0] - p2[0]) ? 1 : 2)} won!";
 
             // if (p1 == "rock" && p2 == "scissors") return "Player 1 won!";
             // if (p1 == "scissors" && p2 == "paper") return "Player 1 won!";
