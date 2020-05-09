@@ -1,6 +1,4 @@
-﻿
-
-//https://www.codewars.com/kata/double-char/train/csharp
+﻿//https://www.codewars.com/kata/double-char/train/csharp
 //https://www.codewars.com/kata/56b1f01c247c01db92000076/solutions/csharp
 
 //Double Char
@@ -23,7 +21,12 @@ namespace CodeWars
     {
         public static string DoubleChar(string s)
         {
-            return string.Concat(s.ToCharArray().Select(c => string.Concat(Enumerable.Repeat(c, 2))));
+            //return string.Concat(s.ToCharArray().Select(c => string.Concat(Enumerable.Repeat(c, 2))));
+
+            // return string.Concat(s.Select(x => $"{x}{x}"));
+            // return (new Regex("(.)")).Replace(s, "$1$1");
+            // return Regex.Replace(s, "(.)", "$1$1");
+            return Regex.Replace(s, ".", "$&$&");
         }
 
 
@@ -75,12 +78,10 @@ namespace CodeWars
         //}
 
 
-
         //public static string DoubleChar(string s)
         //{
         //    return string.Join("", s.ToCharArray().Select(c => c.ToString() + c));
         //}
-
 
 
         //public static string DoubleChar(string s)
@@ -118,9 +119,5 @@ namespace CodeWars
         //{
         //    return (new Regex("(.)")).Replace(s, "$1$1");
         //}
-
-
-
-
     }
 }
