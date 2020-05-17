@@ -18,7 +18,7 @@ namespace CodeWars
         public static double FindAverage(double[] array)
         {
             return (double) array?.Average();
-            return array.Length == 0 ? 0 : array.Average();
+            // return array.Length == 0 ? 0 : array.Average();
         }
 
 

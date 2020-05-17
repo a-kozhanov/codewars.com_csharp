@@ -35,6 +35,7 @@ namespace CodeWars
         public class Candidate
         {
             public int MinSalary = 0;
+
             public Candidate(int minSalary = 120000)
             {
                 MinSalary = minSalary;
@@ -44,6 +45,7 @@ namespace CodeWars
         public class Job
         {
             public int MaxSalary = 0;
+
             public Job(int MaxSalary = 80000)
             {
                 this.MaxSalary = MaxSalary;
@@ -52,7 +54,7 @@ namespace CodeWars
 
         public static bool Match(Candidate c, Job j)
         {
-            return (c.MinSalary == null || j.MaxSalary == null)
+            return (c?.MinSalary == null || j?.MaxSalary == null)
                 ? throw new ArgumentException()
                 : c.MinSalary * 0.9 <= j.MaxSalary;
         }

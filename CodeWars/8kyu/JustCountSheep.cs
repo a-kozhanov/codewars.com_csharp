@@ -18,14 +18,11 @@ namespace CodeWars
     {
         public static string CountSheep(int n)
         {
-            
-            //return string.Join(" sheep...", Enumerable.Range(1, n)) + " sheep...";
             return $"{string.Join(" sheep...", Enumerable.Range(1, n))} sheep...";
-            //string.Join(" sheep...", Enumerable.Range(1, n));
-            
-            var sb = new StringBuilder();
-            for (var i = 1; i <= n; i++) sb.Append($"{i} sheep...");
-            return sb.ToString();
+
+            // var sb = new StringBuilder();
+            // for (var i = 1; i <= n; i++) sb.Append($"{i} sheep...");
+            // return sb.ToString();
         }
 
 
@@ -94,6 +91,5 @@ namespace CodeWars
         //{
         //    return Enumerable.Range(1, numberOfSheep).Select(x => $"{x} sheep...").Aggregate((s1, s2) => $"{s1}{s2}");
         //}
-
     }
 }

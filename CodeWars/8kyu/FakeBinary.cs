@@ -18,14 +18,14 @@ namespace CodeWars
         {
             return string.Concat(x.Select(c => c / '5'));
 
-            var sb = new StringBuilder();
-            foreach (var n in x)
-            {
-                if (int.Parse(n.ToString()) < 5) sb.Append(0);
-                if (int.Parse(n.ToString()) >= 5) sb.Append(1);
-            }
-
-            return sb.ToString();
+            // var sb = new StringBuilder();
+            // foreach (var n in x)
+            // {
+            //     if (int.Parse(n.ToString()) < 5) sb.Append(0);
+            //     if (int.Parse(n.ToString()) >= 5) sb.Append(1);
+            // }
+            //
+            // return sb.ToString();
         }
 
         //public static string FakeBin(string x)

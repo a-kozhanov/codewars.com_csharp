@@ -35,11 +35,11 @@ namespace CodeWars
                 : throw new ArgumentOutOfRangeException();
 
 
-            return n < 1
-                ? throw new ArgumentOutOfRangeException()
-                : Enumerable.Range(1, n)
-                    .Select(x => x % 15 == 0 ? "FizzBuzz" : x % 3 == 0 ? "Fizz" : x % 5 == 0 ? "Buzz" : $"{x}")
-                    .ToArray();
+            // return n < 1
+            //     ? throw new ArgumentOutOfRangeException()
+            //     : Enumerable.Range(1, n)
+            //         .Select(x => x % 15 == 0 ? "FizzBuzz" : x % 3 == 0 ? "Fizz" : x % 5 == 0 ? "Buzz" : $"{x}")
+            //         .ToArray();
 
             // return n == 0
             //     ? throw new ArgumentOutOfRangeException()

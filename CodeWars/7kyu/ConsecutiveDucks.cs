@@ -38,10 +38,9 @@ namespace CodeWars
     {
         public static bool ConsecutiveDucks(int n)
         {
-            // your code here !Number.isInteger( Math.log2(num));
-            return Math.Log2(n) % 1 != 0;
-            return Math.Log(n, 2) % 1 == 0 ? false : true;
-            return (n & (n - 1)) != 0;
+            // return Math.Log(n, 2) % 1 == 0 ? false : true;
+            // return Math.Log2(n) % 1 != 0;
+            // return (n & (n - 1)) != 0;
             return (n-- & n) != 0;
         }
     }

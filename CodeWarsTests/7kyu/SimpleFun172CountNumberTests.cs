@@ -2,12 +2,7 @@
 using System.Text.RegularExpressions;
 using CodeWars;
 using NUnit.Framework;
-using NUnit.Framework;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace CodeWarsTests
 {
@@ -153,7 +148,7 @@ namespace CodeWarsTests
         public void Test2__100_Random_Tests()
         {
             var kata = new SimpleFun172CountNumber();
-            var passed = "<font size=2 color='#8FBC8F'><b>Test Passed!</b></font>";
+            // var passed = "<font size=2 color='#8FBC8F'><b>Test Passed!</b></font>";
 
             for (int i = 0; i < 100; i++)
             {
