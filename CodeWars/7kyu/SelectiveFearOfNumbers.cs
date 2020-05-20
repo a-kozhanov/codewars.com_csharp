@@ -1,6 +1,5 @@
 ﻿/*
-https://www.codewars.com/kata/55b1fd84a24ad00b32000075/train/csharp
-https://www.codewars.com/kata/55b1fd84a24ad00b32000075/solutions/csharp
+https://www.codewars.com/kata/55b1fd84a24ad00b32000075/csharp
 
 7 kyu
 Selective fear of numbers
@@ -29,16 +28,28 @@ namespace CodeWars
     {
         public static bool AmIAfraid(string day, int num)
         {
-            return new Dictionary<string, bool>
+            return day switch
             {
-                {"Monday", num == 12},
-                {"Tuesday", num > 95},
-                {"Wednesday", num == 34},
-                {"Thursday", num == 0},
-                {"Friday", num % 2 == 0},
-                {"Saturday", num == 56},
-                {"Sunday", num % 666 == 0}
-            }[day];
+                "Monday" => num == 12,
+                "Tuesday" => num > 95,
+                "Wednesday" => num == 34,
+                "Thursday" => num == 0,
+                "Friday" => num % 2 == 0,
+                "Saturday" => num == 56,
+                "Sunday" => Math.Abs(num) == 666,
+                _ => false
+            };
+
+            // return new Dictionary<string, bool>
+            // {
+            //     {"Monday", num == 12},
+            //     {"Tuesday", num > 95},
+            //     {"Wednesday", num == 34},
+            //     {"Thursday", num == 0},
+            //     {"Friday", num % 2 == 0},
+            //     {"Saturday", num == 56},
+            //     {"Sunday", num % 666 == 0}
+            // }[day];
         }
 
         // public static bool AmIAfraid(string day, int num)
