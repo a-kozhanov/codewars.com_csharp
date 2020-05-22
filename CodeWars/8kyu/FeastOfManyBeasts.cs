@@ -24,7 +24,9 @@ namespace CodeWars
     {
         public static bool Feast(string beast, string dish)
         {
-            return beast.First() == dish.First() && beast.Last() == dish.Last();
+            return beast[0] == dish[0] && beast[^1] == dish[^1];
+
+            //return beast.First() == dish.First() && beast.Last() == dish.Last();
         }
 
         //public static bool Feast(string beast, string dish)
@@ -40,7 +42,5 @@ namespace CodeWars
         //{
         //    return dish.StartsWith(beast[0]) && dish.EndsWith(beast[beast.Length - 1]);
         //}
-
-
     }
 }
