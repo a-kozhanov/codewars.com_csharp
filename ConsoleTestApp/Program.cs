@@ -18,6 +18,35 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
+            var legs = 8;
+            var result = new List<int>();
+
+            // while (legs > 0)
+            // {
+            //     result.Add(legs / 2);
+            //     legs -= 4;
+            // }
+            //
+            // if (result.Last() == 2)
+            // {
+            //     result.Add(0);
+            // }
+
+            //result = result.OrderBy(x => x).ToList();
+
+            //Console.WriteLine(string.Join(", ", result));
+
+            //Enumerable.Range(legs % 4 / 2, legs / 2 + 1);
+
+            //Console.WriteLine(legs % 4 / 2);
+            //Console.WriteLine(legs / 2 + 1);
+
+            for (var i = legs % 4 / 2; i <= legs / 2 + 1; i += 2)
+            {
+                Console.WriteLine(i);
+            }
+
+            //return list(range(legs % 4 // 2, legs // 2 + 1, 2))
         }
     }
 }
