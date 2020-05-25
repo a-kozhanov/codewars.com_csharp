@@ -1,5 +1,4 @@
-﻿
-//https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/csharp
+﻿//https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/csharp
 //https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/solutions/csharp
 
 //Find the first non-consecutive number
@@ -23,18 +22,21 @@ namespace CodeWars
     {
         public static object FirstNonConsecutive(int[] arr)
         {
+            return arr.Cast<int?>().Skip(1).FirstOrDefault(i => i != ++arr[0]);
+
             //Console.WriteLine(String.Join(", ", arr));
             //var n1 = Enumerable.Range(arr.First(), arr.Length).Select((v, i) => new { Value = v, Index = i }).Where(x => x.Value != arr[x.Index]).Select(c => arr[c.Index]).First();
             //Console.WriteLine(string.Join(", ", n1));
 
             //return Array(Enumerable.Range(arr.First(), arr.Length).Select((v, i) => new { Value = v, Index = i }).Where(x => x.Value != arr[x.Index]).Select(c => arr[c.Index]).ToList().Add(null)).First();
 
-            var n = Enumerable.Range(arr.First(), arr.Length).ToArray();
-            for (var i = 0; i < n.Length; i++)
-            {
-                if (arr[i] != n[i]) return arr[i];
-            }
-            return null;
+            // var n = Enumerable.Range(arr.First(), arr.Length).ToArray();
+            // for (var i = 0; i < n.Length; i++)
+            // {
+            //     if (arr[i] != n[i]) return arr[i];
+            // }
+            //
+            // return null;
         }
 
 
@@ -61,8 +63,5 @@ namespace CodeWars
         //            return arr[i];
         //    return null; 
         //}
-
-
-
     }
 }
