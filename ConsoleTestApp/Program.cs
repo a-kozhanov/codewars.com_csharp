@@ -18,35 +18,20 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var legs = 8;
-            var result = new List<int>();
+            //var arr = new int[] {1, 1, 1, 2, 2, 3};
+            var arr = new int[] {96, 56, 24, 46, 75, 46, 75, 21, 46, 21, 75, 96, 56, 96, 56};
 
-            // while (legs > 0)
-            // {
-            //     result.Add(legs / 2);
-            //     legs -= 4;
-            // }
-            //
-            // if (result.Last() == 2)
-            // {
-            //     result.Add(0);
-            // }
+            var x = arr.Count(i => i == 1);
+            var y = arr.Count(i => i == 2);
 
-            //result = result.OrderBy(x => x).ToList();
+            // var x = arr.Where(i => arr.Count(v => v == i) == 1);
+            // var y = arr.Where(i => arr.Count(v => v == i) == 2);
 
-            //Console.WriteLine(string.Join(", ", result));
-
-            //Enumerable.Range(legs % 4 / 2, legs / 2 + 1);
-
-            //Console.WriteLine(legs % 4 / 2);
-            //Console.WriteLine(legs / 2 + 1);
-
-            for (var i = legs % 4 / 2; i <= legs / 2 + 1; i += 2)
-            {
-                Console.WriteLine(i);
-            }
-
-            //return list(range(legs % 4 // 2, legs // 2 + 1, 2))
+            Console.WriteLine(string.Join(", ", arr.GroupBy(o => o)));
+            Console.WriteLine(string.Join(", ", arr.OrderBy(o => o)));
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(x * x * y);
         }
     }
 }
