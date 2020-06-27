@@ -1,6 +1,4 @@
-﻿
-
-//https://www.codewars.com/kata/calculate-bmi/train/csharp
+﻿//https://www.codewars.com/kata/calculate-bmi/train/csharp
 //https://www.codewars.com/kata/57a429e253ba3381850000fb/solutions/csharp
 
 //8 kyu
@@ -38,7 +36,6 @@ namespace CodeWars
         //}
 
 
-
         //public static string Bmi(double weight, double height)
         //{
         //    var bmi = weight / (height * height);
@@ -58,7 +55,6 @@ namespace CodeWars
         //}
 
 
-
         //public static string Bmi(double weight, double height)
         //{
         //    double bmi = weight/(height*height);
@@ -68,10 +64,5 @@ namespace CodeWars
         //    if (bmi <= 30.0d) return "Overweight";
         //    return "Obese";
         //}
-
-
-
-
     }
-
 }
