@@ -4,7 +4,7 @@
 ![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)
 ![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
 ![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
-
+![](https://github.com/a-kozhanov/codewars_csharp/workflows/codewars_csharp_tests/badge.svg)
 
 ## Overview
 My completed [CodeWars][1] kata solutions on C# (C Sharp)
