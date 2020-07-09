@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using CodeWars;
+using NUnit.Framework;
 
 namespace CodeWarsTests
 {
@@ -6,9 +7,11 @@ namespace CodeWarsTests
     public class GrasshopperVariableAssignmentDebugTests
     {
         [Test]
-        public void MyTest()
+        public static void Tests()
         {
-            Assert.AreEqual("expected", "actual");
+            Assert.AreEqual("dev", GrasshopperVariableAssignmentDebug.a);
+            Assert.AreEqual("Lab", GrasshopperVariableAssignmentDebug.b);
+            Assert.AreEqual("devLab", GrasshopperVariableAssignmentDebug.name);
         }
     }
 }

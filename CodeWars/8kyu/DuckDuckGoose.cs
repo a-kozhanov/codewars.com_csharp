@@ -1,10 +1,8 @@
 ﻿/*
-https://www.codewars.com/kata/duck-duck-goose/train/csharp
-
+https://www.codewars.com/kata/duck-duck-goose/csharp
 
 8 kyu
 Duck Duck Goose
-
 
 The objective of Duck, duck, goose is to walk in a circle, tapping on each player's head until one is chosen.
 Task: Given an array of Player objects (an array of associative arrays in PHP) and an index (1-based), return the name of the chosen Player(name is a property of Player objects, e.g Player.name)
@@ -28,19 +26,23 @@ namespace CodeWars
     {
         public static string DuckDuckGoose(Player[] players, int goose)
         {
-            var count = 0;
-            for (var i = 1; i < goose; i++)
-            {
-                if (count > players.Length - 1) count = 1;
-                else count++;
-            }
-            return players[count].Name;
+            // var count = 0;
+            // for (var i = 1; i < goose; i++)
+            // {
+            //     if (count > players.Length - 1) count = 1;
+            //     else count++;
+            // }
+            //
+            // return players[count].Name;
+
+            return players[(goose - 1) % players.Length].Name;
         }
     }
 
     public class Player
     {
         public string Name { get; set; }
+
         public Player(string name)
         {
             this.Name = name;
@@ -71,8 +73,4 @@ namespace CodeWars
     //    var index = goose % players.Length;
     //    return players[(index == 0 ? players.Length : index) - 1].Name;
     //}
-
-
-
-
 }

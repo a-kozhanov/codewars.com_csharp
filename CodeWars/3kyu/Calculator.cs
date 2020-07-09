@@ -1,5 +1,5 @@
 ﻿/*
-https://www.codewars.com/kata/5235c913397cbf2508000048/train/csharp
+https://www.codewars.com/kata/5235c913397cbf2508000048/csharp
 
 3 kyu
 Calculator

@@ -23,9 +23,9 @@ namespace CodeWars
         public static string ToCurrency(int price)
         {
             //return price.ToString("N0", CultureInfo.CreateSpecificCulture("en-En"));
-            //return price.ToString("N0", CultureInfo.GetCultureInfo("en"));
+            return price.ToString("N0", CultureInfo.GetCultureInfo("en"));
             //return price.ToString("N0");
-            return $"{price:N0}";
+            //return $"{price:N0}";
         }
     }
 }

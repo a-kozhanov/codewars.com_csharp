@@ -1,6 +1,5 @@
 ﻿/*
-https://www.codewars.com/kata/color-ghost/train/csharp
-https://www.codewars.com/kata/53f1015fa9fe02cbda00111a/solutions/csharp
+https://www.codewars.com/kata/color-ghost/csharp
 
 8 kyu
 Color Ghost
@@ -45,9 +44,7 @@ namespace CodeWars
         {
             return color;
         }
-
     }
-
 }
 
 
@@ -61,13 +58,11 @@ namespace CodeWars
 //}
 
 
-
 //public class Ghost
 //{
 //    private readonly string[] Colors = {"white", "yellow", "purple", "red"};
 //    public string GetColor() { return Colors[new Random().Next(0, 4)]; }
 //}
-
 
 
 //public class Ghost
@@ -85,8 +80,6 @@ namespace CodeWars
 //        return color;
 //    }
 //}
-
-
 
 
 //public class Ghost
@@ -119,7 +112,6 @@ namespace CodeWars
 //}
 
 
-
 //public class Ghost
 //{
 //    private string color;
@@ -131,7 +123,6 @@ namespace CodeWars
 //}
 
 
-
 //public class Ghost
 //{
 //    private static readonly string[] colors = { "white", "purple", "red", "yellow" };    
@@ -141,4 +132,3 @@ namespace CodeWars
 //        return colors[DateTime.Now.Millisecond % colors.Length];
 //    }
 //}
-

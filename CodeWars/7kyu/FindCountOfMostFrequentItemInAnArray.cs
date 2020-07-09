@@ -23,7 +23,9 @@ namespace CodeWars
         {
             //return collection.Length == 0 ? 0 : collection.GroupBy(i => i).Max(g => g.Count());
             //return collection.GroupBy(i => i).Select(g => g.Count()).DefaultIfEmpty(0).Max();
-            return collection.Any() ? 0 : collection.GroupBy(i => i).Max(g => g.Count());
+            //return collection.Any() ? 0 : collection.GroupBy(i => i).Max(g => g.Count());
+
+            return collection.Any() ? collection.GroupBy(i => i).Max(g => g.Count()) : 0;
         }
     }
 }

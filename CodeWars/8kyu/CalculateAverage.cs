@@ -1,6 +1,4 @@
-﻿
-//https://www.codewars.com/kata/calculate-average/train/csharp
-//https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/solutions/csharp
+﻿//https://www.codewars.com/kata/calculate-average/csharp
 
 //Calculate average
 //8 kyu
@@ -17,8 +15,7 @@ namespace CodeWars
     {
         public static double FindAverage(double[] array)
         {
-            return (double) array?.Average();
-            // return array.Length == 0 ? 0 : array.Average();
+            return array.Length == 0 ? 0 : array.Average();
         }
 
 
@@ -32,8 +29,5 @@ namespace CodeWars
 
 
         //public static double FindAverage(double[] array) => array.DefaultIfEmpty().Average();
-
-
-
     }
 }
