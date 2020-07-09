@@ -1,7 +1,6 @@
 ﻿using System;
 
-//https://www.codewars.com/kata/super-duper-easy/train/csharp
-//https://www.codewars.com/kata/55a5bfaa756cfede78000026/solutions/csharp
+//https://www.codewars.com/kata/super-duper-easy/csharp
 
 //Super Duper Easy
 //8 kyu
@@ -15,8 +14,11 @@ namespace CodeWars
     {
         public static string Problem(String a)
         {
-            var isNum = double.TryParse(a, out var result);
-            return isNum ? (result * 50 + 6).ToString() : "Error";
+            // var isNum = double.TryParse(a, out var result);
+            // return isNum ? (result * 50 + 6).ToString() : "Error";
+
+            Double value;
+            return (Double.TryParse(a, out value)) ? (value * 50 + 6).ToString() : "Error";
         }
 
 
@@ -34,9 +36,5 @@ namespace CodeWars
         //{
         //    return double.TryParse(a, out double r) ? (r * 50 + 6).ToString() : "Error";
         //}
-
-
-
-
     }
 }
