@@ -14,6 +14,7 @@ min([1,2,3,4,5], 'value') // => 1
 min([1,2,3,4,5], 'index') // => 0
 */
 
+using System;
 using System.Linq;
 
 namespace CodeWars
@@ -22,13 +23,10 @@ namespace CodeWars
     {
         public static int FindSmallest(int[] numbers, string toReturn)
         {
-            if (toReturn == "value")
-            {
-                return numbers.Min(x => x);
-            }
+            //return toReturn == "value" ? numbers.Min() : Array.IndexOf(numbers, numbers.Min());
+            //return toReturn == "value" ? numbers.Min() : numbers.ToList().IndexOf(numbers.Min());
 
-            return numbers.ElementAt(numbers.Min(x => x));
-
+            return toReturn == "index" ? Array.IndexOf(numbers, numbers.Min()) : numbers.Min();
         }
     }
 }
