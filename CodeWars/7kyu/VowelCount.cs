@@ -18,15 +18,11 @@ namespace CodeWars
     {
         public static int GetVowelCount(string str)
         {
-            var vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
-            return str.Count(c => vowels.Contains(c));
+            //var vowels = new HashSet<char> {'a', 'e', 'i', 'o', 'u'};
+            //return str.Count(c => vowels.Contains(c));
+            //return str.Count(i => "aeiou".Contains(i));
+            //return str.Split('a', 'e', 'i', 'o', 'u').Length - 1;
+            return str.Split("aeiou".ToCharArray()).Length - 1;
         }
-
-        //All Solutions
-        //public static int GetVowelCount(string str)
-        //{
-        //    return str.Count(i => "aeiou".Contains(i));
-        //}
-
     }
 }
