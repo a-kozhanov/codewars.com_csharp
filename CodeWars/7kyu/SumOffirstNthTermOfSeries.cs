@@ -36,8 +36,10 @@ namespace CodeWars
     {
         public static string seriesSum(int n)
         {
+            return Enumerable.Range(0, n).Sum(i => 1d / (3 * i + 1)).ToString("F", CultureInfo.InvariantCulture);
+
             //return Enumerable.Range(0, n).Sum(i => 1d / (3 * i + 1)).ToString("F");
-            return $"{Range(0, n).Sum(i => 1d / (3 * i + 1)):F}";
+            //return $"{Range(0, n).Sum(i => 1d / (3 * i + 1)):F}";
 
             // double result = 0;
             //
