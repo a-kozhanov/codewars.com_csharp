@@ -1,4 +1,7 @@
-﻿using CodeWars;
+﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
+using CodeWars;
 using NUnit.Framework;
 
 namespace CodeWarsTests
@@ -23,6 +26,40 @@ namespace CodeWarsTests
         public void BasicTests(string input, string expected)
         {
             Assert.AreEqual(expected, KataDecipherThis.DecipherThis(input));
+        }
+
+
+        [Test]
+        public void RandomTests()
+        {
+            for (var i = 0; i < 40; i++)
+            {
+                string randomInput = RandomInput();
+                string encryptInput = EncryptThis(randomInput);
+                string decipherInput = KataDecipherThis.DecipherThis(encryptInput);
+                Assert.AreEqual(randomInput, decipherInput);
+            }
+        }
+
+        private static readonly Random Random = new Random();
+        private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+        private static string RandomInput()
+        {
+            return string.Join(" ",
+                Enumerable.Range(0, Random.Next(0, 30)).Select(_ => RandomWord(Random.Next(1, 10))));
+        }
+
+        private static string RandomWord(int length)
+        {
+            return new string(Enumerable.Repeat(Chars, length).Select(s => s[Random.Next(s.Length)]).ToArray());
+        }
+
+        private static string EncryptThis(string s)
+        {
+            return string.Join(" ",
+                s.Split().Where(x => x != "")
+                    .Select(x => $"{(int) x[0]}{Regex.Replace(x[1..], "(.)(.*)(.)", "$3$2$1")}"));
         }
     }
 }
