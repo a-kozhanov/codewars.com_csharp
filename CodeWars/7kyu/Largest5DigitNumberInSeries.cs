@@ -32,7 +32,9 @@ namespace CodeWars
     {
         public static int GetNumber(string s)
         {
-            return int.Parse(Enumerable.Range(0, s.Length - 4).Max(i => s.Substring(i, 5)));
+            //return int.Parse(Enumerable.Range(0, s.Length - 4).Max(i => s.Substring(i, 5)));
+            //return Enumerable.Range(0, s.Length - 4).Max(i => int.Parse(s[i..(i + 5)]));
+            return int.Parse(Enumerable.Range(0, s.Length - 4).Max(i => s[i..(i + 5)]));
         }
 
         // public static int GetNumber1(string str)
