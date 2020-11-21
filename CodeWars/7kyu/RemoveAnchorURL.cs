@@ -5,6 +5,9 @@ using System.Text;
 //https://www.codewars.com/kata/remove-anchor-from-url/train/csharp
 //https://www.codewars.com/kata/51f2b4448cadf20ed0000386/solutions/csharp
 
+//7 kyu
+//Remove anchor from URL
+
 //Complete the function/method so that it returns the url with anything after the anchor(#) removed.
 
 //Examples:
