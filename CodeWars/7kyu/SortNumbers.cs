@@ -20,7 +20,12 @@ namespace CodeWars
     {
         public static int[] SortNumbers(int[] nums)
         {
-            return nums == null ? new int[0] : nums.OrderBy(n => n).ToArray();
+            //return (nums ?? new int[] { }).OrderBy(x => x).ToArray();
+
+
+            return nums?.OrderBy(x => x).ToArray() ?? new int[0];
+
+            //return nums == null ? new int[0] : nums.OrderBy(n => n).ToArray();
         }
 
 
