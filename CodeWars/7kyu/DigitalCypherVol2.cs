@@ -47,6 +47,7 @@ Digital cypher vol 3 - missing key
 */
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CodeWars
@@ -55,11 +56,14 @@ namespace CodeWars
     {
         public static string Decode(int[] code, int key)
         {
-            //var r = code.Select((x, i) => x - 96 + int.Parse(key.ToString()[code.ToString().Length % (i + 1)].ToString())).ToArray();
-            var r = string.Concat(code.Select((x, i) =>
-                    (char) (x - int.Parse(key.ToString()[code.Length % (i + 1)].ToString()) + 96)));
-            
-            return r;
+            //return string.Concat(Enumerable.Range(0, code.Length).Select(x => (char) ((code[x] - ((key + "")[x % (key + "").Length] - '0')) + 96)));
+            //return string.Concat(code.Select((x, i) => (char) (x - int.Parse(key.ToString()[i % key.ToString().Length].ToString()) + 96)));
+            //return string.Concat(code.Select((y, i) => (char) (y - ((int) key.ToString()[i % key.ToString().Length] - 48) + 96)));
+            //return string.Concat(code.Select((x, i) => (char) (x - (key.ToString()[i % key.ToString().Length] - '0' + 1) + 'a')));
+            //return string.Concat(code.Select((y, i) => (char) (y - ((int) key.ToString()[i % $"{key}".Length] - 48) + 96)));
+            //return string.Concat(code.Select((c, i) => (char) (code[i] + 144 - key.ToString()[i % key.ToString().Length])));
+            //return string.Concat(code.Select((c, i) => (char) (96 + c - ($"{key}"[i % $"{key}".Length] - '0'))));
+            return string.Concat(code.Select((x, i) => (char) (x - $"{key}"[i % $"{key}".Length] + 144)));
         }
     }
 }
