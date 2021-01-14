@@ -37,11 +37,13 @@ namespace CodeWars
     {
         public int StringsConstruction(string A, string B)
         {
-            // var r = B.GroupBy(x => x).ToDictionary(x => x.Key, x => x.Count()).Where(x => A.Contains(x.Key)).DefaultIfEmpty()
-            //     .Min(x => x.Value);
-            // return r;
-
-            return 0;
+            //return A.GroupBy(c => c, (c, _) => B.Count(v => v == c) / A.Count(v => v == c)).Min();
+            //return A.Distinct().Select(c => B.Count(v => v == c) / A.Count(v => v == c)).Min();
+            //return A.GroupBy(c => c).Select(g => B.Count(c => c == g.Key) / g.Count()).Min();
+            //return A.Distinct().Min(x => B.Count(y => y == x) / A.Count(z => z == x));
+            //return A.Select(x => B.Count(y => x == y) / A.Count(y => y == x)).Min();
+            //return A.Select(c => B.Count(b => c == b) / A.Count(a => a == c)).Min();
+            return A.Min(c => B.Count(b => c == b) / A.Count(a => a == c));
         }
     }
 }
