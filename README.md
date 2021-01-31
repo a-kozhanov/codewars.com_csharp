@@ -1,7 +1,7 @@
 <h1 align="center">CodeWars Kata Solutions on C# (C Sharp)</h1>
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/master/img/logo_codewars.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/test/img/logo_codewars.png" hspace="20">
 </div>
 
 ![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
@@ -11,7 +11,7 @@
 
 ## Overview
 
-My completed [CodeWars][1] kata solutions on C# 8.0 .Net Core 3.1
+My completed [CodeWars][1] kata solutions using C# 8.0 .Net Core 3.1
 
 ## About Codewars
 
@@ -27,9 +27,9 @@ better through practice.
 
 ## How to use
 
-* Сlone this repository or download zip and unpack
+* Сlone this repository or download zip and unpack  
 * Open a project in Visual Studio 2019 or JetBrains Rider.  
-
+  
 
     git clone https://github.com/a-kozhanov/codewars-csharp.git
 
