@@ -17,6 +17,14 @@ namespace CodeWarsTests
             Assert.AreEqual(score, KataCheckExam.CheckExam(arr1, arr2));
         }
 
+        [TestCase(new string[] {"a", "a", "a", "a", "a"}, new string[] {"a", "a", "a", "a", "a"}, null)]
+        [TestCase(new string[] {"b", "b", "b"}, new string[] {"b", "b", "b"}, null)]
+        public void LengthParamsTests(string[] arr1, string[] arr2, int score)
+        {
+            Assert.AreEqual(score, KataCheckExam.CheckExam(arr1, arr2));
+            Assert.AreEqual(score, KataCheckExam.CheckExam(arr1, arr2));
+        }
+
         [Test]
         public void RandomTests()
         {

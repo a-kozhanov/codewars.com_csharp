@@ -30,6 +30,8 @@ namespace CodeWars
     {
         public static int CheckExam(string[] arr1, string[] arr2)
         {
+            if (arr1.Length != 4 || arr2.Length != 4) return 0;
+
             int sum = 0;
             for (var i = 0; i < arr2.Length; i++)
             {
