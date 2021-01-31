@@ -1,7 +1,9 @@
 # CodeWars Kata Solutions on C#
 
+<div align="center"> 
+<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/master/img/logo_codewars.png" hspace="20">
+</div>
 
-![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)
 ![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
 ![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
 ![](https://github.com/a-kozhanov/codewars_csharp/workflows/codewars_csharp_tests/badge.svg)
@@ -21,4 +23,10 @@ Codewars is a community of developers, who are called Code Warriors (or just war
 
 
 [1]: https://www.codewars.com/
+
+## License
+
+MIT
+
+
 
