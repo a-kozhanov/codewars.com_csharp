@@ -1,18 +1,17 @@
-# CodeWars Kata Solutions on C#
+<h1 align="center">CodeWars Kata Solutions on C# (C Sharp)</h1>
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/test/img/logo_codewars.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/master/img/logo_codewars.png" hspace="20">
 </div>
 
 ![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
 ![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
 ![](https://github.com/a-kozhanov/codewars_csharp/workflows/codewars_csharp_tests/badge.svg)
+[![](https://www.codewars.com/users/a.kozhanov/badges/micro)](https://www.codewars.com/users/a.kozhanov)
 
 ## Overview
 
-My completed [CodeWars][1] kata solutions on C# (C Sharp)
-
-My CodeWars [profile](https://www.codewars.com/users/a.kozhanov)
+My completed [CodeWars][1] kata solutions on C# 8.0 .Net Core 3.1
 
 ## About Codewars
 
@@ -22,16 +21,24 @@ Codewars is a community of developers, who are called Code Warriors (or just war
 development skills. Think of it like a coding dojo - where developers train with each other and help each other get
 better through practice.
 
-## Profile Badge
+## My profile on Codewars
 
 [![](https://www.codewars.com/users/a.kozhanov/badges/large)](https://www.codewars.com/users/a.kozhanov)
 
+## How to use
 
-[1]: https://www.codewars.com/
+* Сlone this repository or download zip and unpack
+* Open a project in Visual Studio 2019 or JetBrains Rider.
+
+    git clone https://github.com/a-kozhanov/codewars-csharp.git
 
 ## License
 
 MIT
+
+[1]: https://www.codewars.com/
+
+
 
 
 
