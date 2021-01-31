@@ -23,15 +23,22 @@ namespace CodeWars
     {
         public static string Leo(int oscar)
         {
-            switch (oscar)
+            return oscar switch
             {
-                case 88:
-                    return "Leo finally won the oscar! Leo is happy";
-                case 86:
-                    return "Not even for Wolf of wallstreet?!";
-                default:
-                    return oscar < 88 ? "When will you give Leo an Oscar?" : "Leo got one already!";
-            }
+                88 => "Leo finally won the oscar! Leo is happy",
+                86 => "Not even for Wolf of wallstreet?!",
+                _ => oscar < 88 ? "When will you give Leo an Oscar?" : "Leo got one already!"
+            };
+
+            // switch (oscar)
+            // {
+            //     case 88:
+            //         return "Leo finally won the oscar! Leo is happy";
+            //     case 86:
+            //         return "Not even for Wolf of wallstreet?!";
+            //     default:
+            //         return oscar < 88 ? "When will you give Leo an Oscar?" : "Leo got one already!";
+            // }
         }
     }
 }
@@ -42,5 +49,3 @@ namespace CodeWars
 //{
 //    public static string Leo(int oscar) => oscar > 88 ? "Leo got one already!" : (oscar == 88 ? "Leo finally won the oscar! Leo is happy" : (oscar == 86 ? "Not even for Wolf of wallstreet?!" : "When will you give Leo an Oscar?"));
 //}
-
-
