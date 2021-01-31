@@ -27,11 +27,12 @@ better through practice.
 
 ## How to use
 
-* Сlone this repository or download zip and unpack  
-* Open a project in Visual Studio 2019 or JetBrains Rider.  
-  
+* Сlone this repository or download zip and unpack
+* Open a project in Visual Studio 2019 or JetBrains Rider.
 
+```
     git clone https://github.com/a-kozhanov/codewars-csharp.git
+```
 
 ## License
 
