@@ -1,10 +1,10 @@
 <h1 align="center">CodeWars Kata Solutions C# (C Sharp)</h1>
 
 <div align="center"> 
-<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/test/img/logo_codewars.png" hspace="20">
+<img width="90%" height="90%" src="https://github.com/a-kozhanov/codewars_csharp/blob/master/img/logo_codewars.png" hspace="20">
 </div>
 
-![](http://hits.dwyl.com1/a-kozhanov/codewars_csharp.svg)
+![](http://hits.dwyl.com/a-kozhanov/codewars_csharp.svg)
 ![](https://flat.badgen.net/github/commits/a-kozhanov/codewars_csharp)
 ![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
 ![](https://github.com/a-kozhanov/codewars_csharp/workflows/codewars_csharp_tests/badge.svg)
