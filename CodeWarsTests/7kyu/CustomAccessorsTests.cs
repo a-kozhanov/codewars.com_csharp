@@ -50,7 +50,7 @@ namespace CodeWarsTests
             {
                 sut.Number = 11;
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 Assert.Pass("Correct exception type thrown");
             }
@@ -66,7 +66,7 @@ namespace CodeWarsTests
             {
                 sut.Number = 19;
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 Assert.Pass("Correct exception type thrown");
             }
@@ -82,7 +82,7 @@ namespace CodeWarsTests
             {
                 sut.Number = 77;
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 Assert.Pass("Correct exception type thrown");
             }
@@ -98,7 +98,7 @@ namespace CodeWarsTests
             {
                 sut.Number = -33;
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 Assert.Pass("Correct exception type thrown");
             }
@@ -162,7 +162,7 @@ namespace CodeWarsTests
                     {
                         sut.Number = a;
                     }
-                    catch (ArgumentException e)
+                    catch (ArgumentException)
                     {
                         continue;
                     }
