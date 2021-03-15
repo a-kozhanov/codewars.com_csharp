@@ -1,6 +1,7 @@
 language: csharp
-solution: codewars_csharp.sln
 mono: none
 dotnet: 3.1
+solution: codewars-csharp.sln
 script:
   - dotnet restore
+  - dotnet test
