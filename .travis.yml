@@ -1,9 +1,6 @@
 language: csharp
 solution: codewars_csharp.sln
-
-jobs:
-  include:
-    - dotnet: 3.1
-      mono: none
-      env: DOTNETCORE=2  # optional, can be used to take different code paths in your script
-    - mono: latest
+mono: none
+dotnet: 3.1
+script:
+  - dotnet restore
