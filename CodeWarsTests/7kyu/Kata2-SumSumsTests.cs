@@ -36,21 +36,21 @@ namespace CodeWarsTests
             }
 
             //[Test, Timeout(1500)]
-            [Test, Timeout(500)]
-            public void PerfomanceTest()
-            {
-                Kata2_SumSums t = new Kata2_SumSums();
-                int N = 10000;
-                int[] array = new int[N];
-
-                for (int i = 0; i < N; i++)
-                {
-                    array[i] = i * 7;
-                }
-
-                var res = t.SumOfTwoSumTargets(array, 0, 2000);
-                Assert.AreEqual(285285, res);
-            }
+            // [Test, Timeout(500)]
+            // public void PerfomanceTest()
+            // {
+            //     Kata2_SumSums t = new Kata2_SumSums();
+            //     int N = 10000;
+            //     int[] array = new int[N];
+            //
+            //     for (int i = 0; i < N; i++)
+            //     {
+            //         array[i] = i * 7;
+            //     }
+            //
+            //     var res = t.SumOfTwoSumTargets(array, 0, 2000);
+            //     Assert.AreEqual(285285, res);
+            // }
 
             // [Test, Timeout(500)]
             // public void PerfomanceRandomTest()
