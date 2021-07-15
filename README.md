@@ -9,6 +9,7 @@
 ![](https://flat.badgen.net/github/last-commit/a-kozhanov/codewars_csharp)
 ![](https://github.com/a-kozhanov/codewars_csharp/workflows/codewars_csharp_tests/badge.svg)
 [![](https://www.codewars.com/users/a.kozhanov/badges/micro)](https://www.codewars.com/users/a.kozhanov)
+![GitHub](https://img.shields.io/github/license/a-kozhanov/codewars-csharp)
 
 ## Overview
 
